@@ -3,7 +3,7 @@ EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 1
+Sheet 1 2
 Title ""
 Date ""
 Rev ""
@@ -13,15 +13,10 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Comp
-L MCU_Nordic:nRF52832-QFxx U?
-U 1 1 5B676A04
-P 5500 3650
-F 0 "U?" H 5500 1864 50  0000 C CNN
-F 1 "nRF52832-QFxx" H 5500 1773 50  0000 C CNN
-F 2 "Package_DFN_QFN:QFN-48-1EP_6x6mm_P0.4mm_EP4.66x4.66mm" H 5500 1550 50  0001 C CNN
-F 3 "http://infocenter.nordicsemi.com/pdf/nRF52832_PS_v1.4.pdf" H 5000 3850 50  0001 C CNN
-	1    5500 3650
-	1    0    0    -1  
-$EndComp
+$Sheet
+S 6550 2550 2100 2150
+U 5B677216
+F0 "NRF52832_Reference" 50
+F1 "NRF52832_Base_Reference.sch" 50
+$EndSheet
 $EndSCHEMATC
