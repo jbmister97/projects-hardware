@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name MM8130-2600RA2)(type Legacy)(uri ${KIPRJMOD}/Extra_symbols_footprints/MM8130-2600RA2.lib)(options "")(descr ""))
+)

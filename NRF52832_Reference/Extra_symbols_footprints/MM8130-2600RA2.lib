@@ -1,0 +1,32 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#(c) SnapEDA 2016 (snapeda.com)
+#This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License (CC BY-SA) with Design Exception 1.0
+#
+# MM8130-2600RA2
+#
+DEF MM8130-2600RA2 J 0 40 Y Y 1 L N
+F0 "J" -301 221 50 H V L BNN
+F1 "MM8130-2600RA2" -301 -301 50 H V L BNN
+F2 "MURATA_MM8130-2600RA2" 0 0 50 H I L BNN
+F3 "Murata" 0 0 50 H I L BNN
+F4 "490-4981-1-ND" 0 0 50 H I L BNN
+F5 "SWF appliance socket, straight [Murata] MM8130-2600RA2 SWF appliance socket, straight" 0 0 50 H I L BNN
+F6 "https://www.digikey.com/product-detail/en/murata-electronics-north-america/MM8130-2600RA2/490-4981-1-ND/1775925?utm_source=snapeda&utm_medium=aggregator&utm_campaign=symbol" 0 0 50 H I L BNN
+F7 "None" 0 0 50 H I L BNN
+F8 "MM8130-2600RA2" 0 0 50 H I L BNN
+DRAW
+P 2 0 0 10 -300 200 -300 -200 N
+P 2 0 0 10 -300 -200 300 -200 N
+P 2 0 0 10 300 -200 300 200 N
+P 2 0 0 10 300 200 -300 200 N
+X IN IN -400 100 100 R 40 40 0 0 I 
+X OUT OUT 400 100 100 L 40 40 0 0 O 
+X GND GND1 400 -100 100 L 40 40 0 0 W 
+X GND GND2 400 -100 100 L 40 40 0 0 W 
+X GND GND3 400 -100 100 L 40 40 0 0 W 
+X GND GND4 400 -100 100 L 40 40 0 0 W 
+ENDDRAW
+ENDDEF
+#
+# End Library
