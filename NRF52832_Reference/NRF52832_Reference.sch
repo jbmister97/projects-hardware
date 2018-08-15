@@ -81,28 +81,6 @@ F 3 "" H 4400 2850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C6
-U 1 1 5B5B72F5
-P 6200 2850
-F 0 "C6" H 6225 2950 50  0000 L CNN
-F 1 "12pF" H 6225 2750 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0402" H 6238 2700 50  0001 C CNN
-F 3 "" H 6200 2850 50  0001 C CNN
-	1    6200 2850
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C7
-U 1 1 5B5B7383
-P 6600 2850
-F 0 "C7" H 6625 2950 50  0000 L CNN
-F 1 "12pF" H 6625 2750 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0402" H 6638 2700 50  0001 C CNN
-F 3 "" H 6600 2850 50  0001 C CNN
-	1    6600 2850
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:C C9
 U 1 1 5B5B73F0
 P 7900 3950
@@ -123,28 +101,6 @@ F 2 "Capacitors_SMD:C_0402" H 7938 3500 50  0001 C CNN
 F 3 "" H 7900 3650 50  0001 C CNN
 	1    7900 3650
 	0    1    1    0   
-$EndComp
-$Comp
-L power:GND #PWR02
-U 1 1 5B5B7E31
-P 6200 3100
-F 0 "#PWR02" H 6200 2850 50  0001 C CNN
-F 1 "GND" H 6200 2950 50  0000 C CNN
-F 2 "" H 6200 3100 50  0001 C CNN
-F 3 "" H 6200 3100 50  0001 C CNN
-	1    6200 3100
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR03
-U 1 1 5B5B7E69
-P 6600 3100
-F 0 "#PWR03" H 6600 2850 50  0001 C CNN
-F 1 "GND" H 6600 2950 50  0000 C CNN
-F 2 "" H 6600 3100 50  0001 C CNN
-F 3 "" H 6600 3100 50  0001 C CNN
-	1    6600 3100
-	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR04
@@ -456,22 +412,6 @@ Wire Wire Line
 Wire Wire Line
 	7750 3650 7500 3650
 Wire Wire Line
-	5950 3250 5950 2650
-Wire Wire Line
-	5950 2650 6200 2650
-Wire Wire Line
-	6200 2650 6200 2700
-Wire Wire Line
-	5850 3250 5850 2550
-Wire Wire Line
-	5850 2550 6600 2550
-Wire Wire Line
-	6600 2550 6600 2700
-Wire Wire Line
-	6200 3100 6200 3000
-Wire Wire Line
-	6600 3100 6600 3000
-Wire Wire Line
 	4850 2550 4850 3250
 Wire Wire Line
 	4850 2550 4400 2550
@@ -619,7 +559,7 @@ Wire Notes Line
 	5625 2075 5950 2075
 Wire Notes Line
 	5950 2075 5950 1350
-Text Notes 5575 2475 0    60   ~ 0
+Text Notes 5500 2600 0    60   ~ 0
 Note: P0.25 (Pin 37) is low\ndrive, low frequency I/O only.
 Wire Wire Line
 	7400 4750 7400 4850
