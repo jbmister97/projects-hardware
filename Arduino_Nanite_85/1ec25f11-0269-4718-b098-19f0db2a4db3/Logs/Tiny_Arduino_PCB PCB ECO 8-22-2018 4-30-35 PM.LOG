@@ -1,0 +1,14 @@
+Removed Pin From Net: NetName=NetCN1_2 Pin=D1-1
+Removed Pin From Net: NetName=GND Pin=D1-2
+Removed Pin From Net: NetName=NetCN1_3 Pin=D2-1
+Removed Pin From Net: NetName=GND Pin=D2-2
+Change Component DesignItemId : Designator=D1 Old DesignItemId=CMP-816660-2 New DesignItemId=CMP-6124aa8bc752bee3-1
+Change Component DesignItemId : Designator=D2 Old DesignItemId=CMP-816660-2 New DesignItemId=CMP-6124aa8bc752bee3-1
+Change Component Footprint: Designator=D1 Old Footprint=ONSC-DSN-2-152AC-01_V New Footprint=PCB-2omd1n8vppfni68elkoq-1
+Change Component Footprint: Designator=D2 Old Footprint=ONSC-DSN-2-152AC-01_V New Footprint=PCB-2omd1n8vppfni68elkoq-1
+Change Component Comment : Designator=D1 Old Comment=CMP-816660-2 New Comment=Panasonic DB2J40700L
+Change Component Comment : Designator=D2 Old Comment=CMP-816660-2 New Comment=Panasonic DB2J40700L
+Added Pin To Net: NetName=GND Pin=D1-1
+Added Pin To Net: NetName=NetCN1_2 Pin=D1-2
+Added Pin To Net: NetName=GND Pin=D2-1
+Added Pin To Net: NetName=NetCN1_3 Pin=D2-2

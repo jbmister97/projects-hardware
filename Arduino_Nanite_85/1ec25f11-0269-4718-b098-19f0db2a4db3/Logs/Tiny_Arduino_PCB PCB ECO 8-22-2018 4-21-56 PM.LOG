@@ -1,0 +1,19 @@
+Removed Pin From Net: NetName=NetCN1_2 Pin=CN1-3
+Removed Pin From Net: NetName=GND Pin=D1-A
+Removed Pin From Net: NetName=NetCN1_2 Pin=D1-K
+Removed Pin From Net: NetName=GND Pin=D2-A
+Removed Pin From Net: NetName=NetCN1_2 Pin=D2-K
+Removed Pin From Net: NetName=NetCN1_2 Pin=R2-1
+Change Component DesignItemId : Designator=D1 Old DesignItemId=CMP-4964570-4 New DesignItemId=CMP-816660-2
+Change Component DesignItemId : Designator=D2 Old DesignItemId=CMP-4964570-4 New DesignItemId=CMP-816660-2
+Change Component Footprint: Designator=D1 Old Footprint=ONSC-SOD-123-2-425-04_V New Footprint=ONSC-DSN-2-152AC-01_V
+Change Component Footprint: Designator=D2 Old Footprint=ONSC-SOD-123-2-425-04_V New Footprint=ONSC-DSN-2-152AC-01_V
+Change Component Comment : Designator=D1 Old Comment=CMP-4964570-4 New Comment=CMP-816660-2
+Change Component Comment : Designator=D2 Old Comment=CMP-4964570-4 New Comment=CMP-816660-2
+Added Pin To Net: NetName=NetCN1_2 Pin=D1-1
+Added Pin To Net: NetName=GND Pin=D1-2
+Added Pin To Net: NetName=GND Pin=D2-2
+Added Pin To Net: NetName=NetCN1_3 Pin=CN1-3
+Added Pin To Net: NetName=NetCN1_3 Pin=D2-1
+Added Pin To Net: NetName=NetCN1_3 Pin=R2-1
+Added Net: Name=NetCN1_3

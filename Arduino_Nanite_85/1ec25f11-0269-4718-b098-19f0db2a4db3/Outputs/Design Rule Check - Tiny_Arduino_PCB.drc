@@ -1,0 +1,26 @@
+Protel Design System Design Rule Check
+PCB File : Tiny_Arduino_PCB.CMPcbDoc
+Date     : 8/22/2018
+Time     : 7:14:20 PM
+
+Processing Rule : Net Antennae (Tolerance=0mil) (All)
+Rule Violations :0
+
+Processing Rule : Hole To Hole Clearance (Gap=10mil) (All),(All)
+Rule Violations :0
+
+Processing Rule : Power Plane Connect Rule(Relief Connect )(Expansion=20mil) (Conductor Width=10mil) (Air Gap=10mil) (Entries=4) (All)
+Rule Violations :0
+
+Processing Rule : Clearance Constraint (Gap=5mil) (All),(All)
+Rule Violations :0
+
+Processing Rule : Un-Routed Net Constraint ( (All) )
+Rule Violations :0
+
+Processing Rule : Short-Circuit Constraint (Allowed=No) (All),(All)
+Rule Violations :0
+
+
+Violations Detected : 0
+Time Elapsed        : 00:00:00
