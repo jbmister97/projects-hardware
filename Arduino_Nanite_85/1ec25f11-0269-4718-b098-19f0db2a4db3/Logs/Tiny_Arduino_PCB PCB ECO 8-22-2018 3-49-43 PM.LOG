@@ -1,0 +1,62 @@
+Added Component: Designator=C1(CAPC1608X90X35LL15T15)
+Added Component: Designator=CN1(PCB-kuo5gykd7jvbo0o0jro3-1)
+Added Component: Designator=D1(ONSC-SOD-123-2-425-04_V)
+Added Component: Designator=D2(ONSC-SOD-123-2-425-04_V)
+Added Component: Designator=DS1(VSH-TLMX1100)
+Added Component: Designator=J1(PCB-mruwntkvy73mrw75dg9m-1)
+Added Component: Designator=J2(PCB-mruwntkvy73mrw75dg9m-1)
+Added Component: Designator=R1(0603R)
+Added Component: Designator=R2(RESC1608X55X30LL15T15)
+Added Component: Designator=R3(RESC1608X55X30LL15T15)
+Added Component: Designator=R4(RESC1608X55X30LL15T15)
+Added Component: Designator=R5(RESC1608X05N)
+Added Component: Designator=U1(8S2_L)
+Added Pin To Net: NetName=+5 Pin=C1-2
+Added Pin To Net: NetName=+5 Pin=CN1-1
+Added Pin To Net: NetName=+5 Pin=J1-4
+Added Pin To Net: NetName=+5 Pin=R1-2
+Added Pin To Net: NetName=+5 Pin=R4-2
+Added Pin To Net: NetName=+5 Pin=U1-8
+Added Net: Name=+5
+Added Pin To Net: NetName=\R\E\S\E\T\ Pin=DS1-2
+Added Pin To Net: NetName=\R\E\S\E\T\ Pin=J2-4
+Added Pin To Net: NetName=\R\E\S\E\T\ Pin=R5-1
+Added Pin To Net: NetName=\R\E\S\E\T\ Pin=U1-1
+Added Net: Name=\R\E\S\E\T\
+Added Pin To Net: NetName=GND Pin=C1-1
+Added Pin To Net: NetName=GND Pin=CN1-5
+Added Pin To Net: NetName=GND Pin=D1-A
+Added Pin To Net: NetName=GND Pin=D2-A
+Added Pin To Net: NetName=GND Pin=J2-1
+Added Pin To Net: NetName=GND Pin=R5-2
+Added Pin To Net: NetName=GND Pin=U1-4
+Added Net: Name=GND
+Added Pin To Net: NetName=NetCN1_2 Pin=CN1-2
+Added Pin To Net: NetName=NetCN1_2 Pin=CN1-3
+Added Pin To Net: NetName=NetCN1_2 Pin=D1-K
+Added Pin To Net: NetName=NetCN1_2 Pin=D2-K
+Added Pin To Net: NetName=NetCN1_2 Pin=R1-1
+Added Pin To Net: NetName=NetCN1_2 Pin=R2-1
+Added Pin To Net: NetName=NetCN1_2 Pin=R3-1
+Added Net: Name=NetCN1_2
+Added Pin To Net: NetName=NetDS1_1 Pin=DS1-1
+Added Pin To Net: NetName=NetDS1_1 Pin=R4-1
+Added Net: Name=NetDS1_1
+Added Pin To Net: NetName=PB0 Pin=J1-1
+Added Pin To Net: NetName=PB0 Pin=U1-5
+Added Net: Name=PB0
+Added Pin To Net: NetName=PB1 Pin=J1-2
+Added Pin To Net: NetName=PB1 Pin=U1-6
+Added Net: Name=PB1
+Added Pin To Net: NetName=PB2 Pin=J1-3
+Added Pin To Net: NetName=PB2 Pin=U1-7
+Added Net: Name=PB2
+Added Pin To Net: NetName=PB3 Pin=J2-3
+Added Pin To Net: NetName=PB3 Pin=R3-2
+Added Pin To Net: NetName=PB3 Pin=U1-2
+Added Net: Name=PB3
+Added Pin To Net: NetName=PB4 Pin=J2-2
+Added Pin To Net: NetName=PB4 Pin=R2-2
+Added Pin To Net: NetName=PB4 Pin=U1-3
+Added Net: Name=PB4
+Added Class: Name=Tiny_Arduino_Sch
