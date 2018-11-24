@@ -26,7 +26,7 @@ F 3 "" H 8850 4900 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Regulator_Linear:LT1086-3.3 U4
+L Project_Libary:UA78M33QDCYRG4Q1 U4
 U 1 1 5BEB4959
 P 2900 7400
 F 0 "U4" H 2900 7642 50  0000 C CNN
@@ -240,44 +240,27 @@ $EndComp
 $Comp
 L Project_Libary:Pad P1
 U 1 1 5BEBFB70
-P 900 4850
-F 0 "P1" H 999 4896 50  0000 L CNN
-F 1 "Pad" H 999 4805 50  0000 L CNN
-F 2 "Custom_Footprints:Pad" H 900 4850 50  0001 C CNN
-F 3 "" H 900 4850 50  0001 C CNN
-	1    900  4850
+P 800 4800
+F 0 "P1" H 899 4846 50  0000 L CNN
+F 1 "Pad" H 899 4755 50  0000 L CNN
+F 2 "Custom_Footprints:Pad" H 800 4800 50  0001 C CNN
+F 3 "" H 800 4800 50  0001 C CNN
+	1    800  4800
 	0    -1   -1   0   
 $EndComp
 $Comp
 L Project_Libary:Pad P2
 U 1 1 5BEBFC75
-P 900 5550
-F 0 "P2" H 999 5596 50  0000 L CNN
-F 1 "Pad" H 999 5505 50  0000 L CNN
-F 2 "Custom_Footprints:Pad" H 900 5550 50  0001 C CNN
-F 3 "" H 900 5550 50  0001 C CNN
-	1    900  5550
+P 800 5550
+F 0 "P2" H 899 5596 50  0000 L CNN
+F 1 "Pad" H 899 5505 50  0000 L CNN
+F 2 "Custom_Footprints:Pad" H 800 5550 50  0001 C CNN
+F 3 "" H 800 5550 50  0001 C CNN
+	1    800  5550
 	0    -1   -1   0   
 $EndComp
-Wire Wire Line
-	1100 4850 1450 4850
-Text GLabel 1450 4850 2    50   Output ~ 0
+Text GLabel 1200 4800 2    50   Output ~ 0
 V+
-$Comp
-L power:GND #PWR04
-U 1 1 5BEC2FD4
-P 1550 5600
-F 0 "#PWR04" H 1550 5350 50  0001 C CNN
-F 1 "GND" H 1555 5427 50  0000 C CNN
-F 2 "" H 1550 5600 50  0001 C CNN
-F 3 "" H 1550 5600 50  0001 C CNN
-	1    1550 5600
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1550 5550 1550 5600
-Wire Wire Line
-	1100 5550 1550 5550
 Wire Wire Line
 	1850 1400 1450 1400
 Wire Wire Line
@@ -320,7 +303,7 @@ Wire Wire Line
 	1450 6200 1100 6200
 Text Notes 650  6850 0    50   ~ 0
 Constant 12VDC\nfrom battery
-Text Notes 600  5300 0    50   ~ 0
+Text Notes 600  5200 0    50   ~ 0
 12V PWM from\npower drill output\n
 Wire Wire Line
 	10150 5550 10150 5300
@@ -509,21 +492,21 @@ Text GLabel 4725 7475 0    50   Input ~ 0
 BTN_3
 Text GLabel 5925 7475 0    50   Input ~ 0
 BTN_4
-Text GLabel 8750 4700 0    50   Output ~ 0
-BTN_1
-Text GLabel 7950 4700 2    50   Input ~ 0
-BTN_1
 Text GLabel 8750 4600 0    50   Output ~ 0
-BTN_2
+BTN_1
 Text GLabel 7950 4600 2    50   Input ~ 0
+BTN_1
+Text GLabel 9650 4600 2    50   Output ~ 0
 BTN_2
-Text GLabel 8750 4500 0    50   Output ~ 0
+Text GLabel 10550 4600 0    50   Input ~ 0
+BTN_2
+Text GLabel 9650 4900 2    50   Output ~ 0
 BTN_3
-Text GLabel 7950 4500 2    50   Input ~ 0
+Text GLabel 10550 4900 0    50   Input ~ 0
 BTN_3
-Text GLabel 8750 4400 0    50   Output ~ 0
+Text GLabel 9650 5200 2    50   Output ~ 0
 BTN_4
-Text GLabel 7950 4400 2    50   Input ~ 0
+Text GLabel 10550 5200 0    50   Input ~ 0
 BTN_4
 Wire Wire Line
 	8600 5300 7950 5300
@@ -537,33 +520,33 @@ Wire Wire Line
 Wire Wire Line
 	8750 4800 7950 4800
 Connection ~ 10400 5300
+Text GLabel 8750 4400 0    50   Output ~ 0
+OUT_1
+Text GLabel 7950 4400 2    50   Input ~ 0
+OUT_1
 Text GLabel 9650 4400 2    50   Output ~ 0
-OUT_1
+OUT_2
 Text GLabel 10550 4400 0    50   Input ~ 0
-OUT_1
-Text GLabel 9650 4600 2    50   Output ~ 0
 OUT_2
-Text GLabel 10550 4600 0    50   Input ~ 0
-OUT_2
-Text GLabel 9650 4800 2    50   Output ~ 0
+Text GLabel 9650 4700 2    50   Output ~ 0
 OUT_3
-Text GLabel 10550 4800 0    50   Input ~ 0
+Text GLabel 10550 4700 0    50   Input ~ 0
 OUT_3
 Text GLabel 9650 5000 2    50   Output ~ 0
 OUT_4
 Text GLabel 10550 5000 0    50   Input ~ 0
 OUT_4
+Text GLabel 7950 4500 2    50   Input ~ 0
+DIR_1
+Text GLabel 8750 4500 0    50   Output ~ 0
+DIR_1
 Text GLabel 10550 4500 0    50   Input ~ 0
-DIR_1
+DIR_2
 Text GLabel 9650 4500 2    50   Output ~ 0
-DIR_1
-Text GLabel 10550 4700 0    50   Input ~ 0
 DIR_2
-Text GLabel 9650 4700 2    50   Output ~ 0
-DIR_2
-Text GLabel 10550 4900 0    50   Input ~ 0
+Text GLabel 10550 4800 0    50   Input ~ 0
 DIR_3
-Text GLabel 9650 4900 2    50   Output ~ 0
+Text GLabel 9650 4800 2    50   Output ~ 0
 DIR_3
 Text GLabel 10550 5100 0    50   Input ~ 0
 DIR_4
@@ -646,7 +629,7 @@ F 3 "" H 5400 5400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Regulator_Linear:AMS1117-5.0 U3
+L Project_Libary:UA78M05IDCY U3
 U 1 1 5C1513FD
 P 2900 6700
 F 0 "U3" H 2900 6942 50  0000 C CNN
@@ -675,8 +658,6 @@ F 3 "" H 3050 7000 50  0001 C CNN
 	1    3050 7000
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	2900 7000 3050 7000
 Text GLabel 3550 6700 2    50   Output ~ 0
 5V_REF
 $Comp
@@ -983,10 +964,6 @@ Wire Notes Line
 Wire Notes Line
 	6950 5950 6950 7800
 Wire Notes Line
-	475  4550 1825 4550
-Wire Notes Line
-	1825 4550 1825 5875
-Wire Notes Line
 	4075 5875 4075 7775
 Wire Notes Line
 	475  5875 4075 5875
@@ -1074,10 +1051,8 @@ $EndComp
 Wire Wire Line
 	2000 6700 2250 6700
 Connection ~ 2250 6700
-Connection ~ 2900 7000
 Wire Wire Line
 	3300 7000 3050 7000
-Connection ~ 3050 7000
 Connection ~ 2900 7700
 Wire Wire Line
 	2900 7700 3300 7700
@@ -1099,8 +1074,6 @@ Wire Wire Line
 Connection ~ 2250 7700
 Wire Wire Line
 	2250 7400 2600 7400
-Wire Wire Line
-	2250 7000 2900 7000
 Wire Wire Line
 	2250 6700 2600 6700
 Wire Wire Line
@@ -1175,9 +1148,9 @@ F 3 "" H 6300 3300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text GLabel 5900 2950 0    50   Input ~ 0
-RED_4
+RED_3
 Text GLabel 6400 2950 2    50   Input ~ 0
-GREEN_4
+GREEN_3
 $Comp
 L Connector:Conn_01x02_Male J7
 U 1 1 5BFAF9D4
@@ -1248,9 +1221,9 @@ F 3 "" H 3650 3300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text GLabel 3250 2950 0    50   Input ~ 0
-RED_4
+RED_2
 Text GLabel 3750 2950 2    50   Input ~ 0
-GREEN_4
+GREEN_2
 $Comp
 L Connector:Conn_01x02_Male J2
 U 1 1 5BFB5C48
@@ -1321,9 +1294,9 @@ F 3 "" H 1250 3300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text GLabel 850  2950 0    50   Input ~ 0
-RED_4
+RED_1
 Text GLabel 1350 2950 2    50   Input ~ 0
-GREEN_4
+GREEN_1
 $Comp
 L Connector:Conn_01x02_Male J1
 U 1 1 5BFBC846
@@ -1407,8 +1380,6 @@ Wire Wire Line
 	10550 5000 10750 5000
 Wire Wire Line
 	10550 5100 10750 5100
-Wire Wire Line
-	9650 5200 10750 5200
 Wire Wire Line
 	10400 5300 10750 5300
 Wire Wire Line
@@ -1533,4 +1504,21 @@ F 3 "" H 9300 850 50  0001 C CNN
 	1    9300 850 
 	0    1    1    0   
 $EndComp
+Wire Wire Line
+	2250 7000 2900 7000
+Connection ~ 3050 7000
+Connection ~ 2900 7000
+Wire Wire Line
+	2900 7000 3050 7000
+Wire Wire Line
+	1000 4800 1200 4800
+Wire Notes Line
+	500  4350 1750 4350
+Wire Notes Line
+	1750 4350 1750 5850
+Wire Wire Line
+	10550 5200 10750 5200
+Wire Wire Line
+	7950 4700 8750 4700
+NoConn ~ 1000 5550
 $EndSCHEMATC

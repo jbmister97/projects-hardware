@@ -66,94 +66,22 @@ F 3 "" H 9550 1950 50  0001 C CNN
 	1    9700 1950
 	1    0    0    -1  
 $EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 5C1392EC
-P 2050 2550
-AR Path="/5C1392EC" Ref="#PWR?"  Part="1" 
-AR Path="/5C130376/5C1392EC" Ref="#PWR032"  Part="1" 
-F 0 "#PWR032" H 2050 2300 50  0001 C CNN
-F 1 "GND" H 2055 2377 50  0000 C CNN
-F 2 "" H 2050 2550 50  0001 C CNN
-F 3 "" H 2050 2550 50  0001 C CNN
-	1    2050 2550
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	1950 2400 1950 2550
 Wire Wire Line
-	1950 2550 2050 2550
-Wire Wire Line
 	2150 2400 2150 2550
-Wire Wire Line
-	2150 2550 2050 2550
-Connection ~ 2050 2550
-$Comp
-L power:GND #PWR?
-U 1 1 5C1392F7
-P 4550 2550
-AR Path="/5C1392F7" Ref="#PWR?"  Part="1" 
-AR Path="/5C130376/5C1392F7" Ref="#PWR035"  Part="1" 
-F 0 "#PWR035" H 4550 2300 50  0001 C CNN
-F 1 "GND" H 4555 2377 50  0000 C CNN
-F 2 "" H 4550 2550 50  0001 C CNN
-F 3 "" H 4550 2550 50  0001 C CNN
-	1    4550 2550
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	4450 2400 4450 2550
 Wire Wire Line
-	4450 2550 4550 2550
-Wire Wire Line
 	4650 2400 4650 2550
-Wire Wire Line
-	4650 2550 4550 2550
-Connection ~ 4550 2550
-$Comp
-L power:GND #PWR?
-U 1 1 5C139302
-P 7150 2550
-AR Path="/5C139302" Ref="#PWR?"  Part="1" 
-AR Path="/5C130376/5C139302" Ref="#PWR040"  Part="1" 
-F 0 "#PWR040" H 7150 2300 50  0001 C CNN
-F 1 "GND" H 7155 2377 50  0000 C CNN
-F 2 "" H 7150 2550 50  0001 C CNN
-F 3 "" H 7150 2550 50  0001 C CNN
-	1    7150 2550
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	7050 2400 7050 2550
 Wire Wire Line
-	7050 2550 7150 2550
-Wire Wire Line
 	7250 2400 7250 2550
-Wire Wire Line
-	7250 2550 7150 2550
-Connection ~ 7150 2550
-$Comp
-L power:GND #PWR?
-U 1 1 5C13930D
-P 9700 2550
-AR Path="/5C13930D" Ref="#PWR?"  Part="1" 
-AR Path="/5C130376/5C13930D" Ref="#PWR041"  Part="1" 
-F 0 "#PWR041" H 9700 2300 50  0001 C CNN
-F 1 "GND" H 9705 2377 50  0000 C CNN
-F 2 "" H 9700 2550 50  0001 C CNN
-F 3 "" H 9700 2550 50  0001 C CNN
-	1    9700 2550
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	9600 2400 9600 2550
 Wire Wire Line
-	9600 2550 9700 2550
-Wire Wire Line
 	9800 2400 9800 2550
-Wire Wire Line
-	9800 2550 9700 2550
-Connection ~ 9700 2550
 $Comp
 L Project_Libary:G8N-1L-DC12 K?
 U 1 1 5C139326
@@ -272,7 +200,7 @@ F 3 "~" H 850 1850 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:Q_NMOS_GDS Q?
+L Device:Q_NMOS_GSD Q?
 U 1 1 5C139369
 P 1750 7000
 AR Path="/5C139369" Ref="Q?"  Part="1" 
@@ -302,7 +230,7 @@ Wire Wire Line
 Wire Wire Line
 	1150 7000 1000 7000
 $Comp
-L Device:Q_NMOS_GDS Q?
+L Device:Q_NMOS_GSD Q?
 U 1 1 5C139379
 P 3250 7000
 AR Path="/5C139379" Ref="Q?"  Part="1" 
@@ -332,7 +260,7 @@ Wire Wire Line
 Wire Wire Line
 	2650 7000 2500 7000
 $Comp
-L Device:Q_NMOS_GDS Q?
+L Device:Q_NMOS_GSD Q?
 U 1 1 5C139389
 P 4700 7000
 AR Path="/5C139389" Ref="Q?"  Part="1" 
@@ -362,7 +290,7 @@ Wire Wire Line
 Wire Wire Line
 	4100 7000 3950 7000
 $Comp
-L Device:Q_NMOS_GDS Q?
+L Device:Q_NMOS_GSD Q?
 U 1 1 5C139399
 P 6400 7000
 AR Path="/5C139399" Ref="Q?"  Part="1" 
@@ -611,7 +539,7 @@ SW4_CTL
 Wire Wire Line
 	6500 6800 6500 6750
 $Comp
-L Device:Q_NMOS_GDS Q?
+L Device:Q_NMOS_GSD Q?
 U 1 1 5C13B55A
 P 4725 5175
 AR Path="/5C13B55A" Ref="Q?"  Part="1" 
@@ -624,7 +552,7 @@ F 3 "~" H 4725 5175 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:Q_NMOS_GDS Q?
+L Device:Q_NMOS_GSD Q?
 U 1 1 5C13B561
 P 6300 5175
 AR Path="/5C13B561" Ref="Q?"  Part="1" 
@@ -701,7 +629,7 @@ Wire Wire Line
 Wire Wire Line
 	5700 5175 5550 5175
 $Comp
-L Device:Q_NMOS_GDS Q?
+L Device:Q_NMOS_GSD Q?
 U 1 1 5C13D8E5
 P 1675 5175
 AR Path="/5C13D8E5" Ref="Q?"  Part="1" 
@@ -714,7 +642,7 @@ F 3 "~" H 1675 5175 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:Q_NMOS_GDS Q?
+L Device:Q_NMOS_GSD Q?
 U 1 1 5C13D8EC
 P 3200 5175
 AR Path="/5C13D8EC" Ref="Q?"  Part="1" 
@@ -1200,4 +1128,12 @@ Wire Wire Line
 Connection ~ 8900 1650
 Wire Wire Line
 	8900 1650 8550 1650
+Wire Wire Line
+	1950 2550 2150 2550
+Wire Wire Line
+	4450 2550 4650 2550
+Wire Wire Line
+	7050 2550 7250 2550
+Wire Wire Line
+	9600 2550 9800 2550
 $EndSCHEMATC
