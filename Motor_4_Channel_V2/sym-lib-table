@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name Motor_4_Channel_V2-rescue)(type Legacy)(uri ${KIPRJMOD}/Motor_4_Channel_V2-rescue.lib)(options "")(descr ""))
+)
