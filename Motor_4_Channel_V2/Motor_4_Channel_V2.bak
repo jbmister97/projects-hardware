@@ -114,7 +114,7 @@ U 1 1 5BEB6C3D
 P 9950 5550
 F 0 "J10" H 9950 5350 50  0000 C CNN
 F 1 "Conn_01x02_Male" H 9750 5350 50  0001 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 9950 5550 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical_SMD_Pin1Left" H 9950 5550 50  0001 C CNN
 F 3 "~" H 9950 5550 50  0001 C CNN
 	1    9950 5550
 	1    0    0    -1  
@@ -240,42 +240,27 @@ $EndComp
 $Comp
 L Project_Libary:Pad P1
 U 1 1 5BEBFB70
-P 700 5000
-F 0 "P1" H 799 5046 50  0000 L CNN
-F 1 "Pad" H 799 4955 50  0000 L CNN
-F 2 "Custom_Footprints:Pad" H 700 5000 50  0001 C CNN
-F 3 "" H 700 5000 50  0001 C CNN
-	1    700  5000
+P 800 4800
+F 0 "P1" H 899 4846 50  0000 L CNN
+F 1 "Pad" H 899 4755 50  0000 L CNN
+F 2 "Custom_Footprints:Pad" H 800 4800 50  0001 C CNN
+F 3 "" H 800 4800 50  0001 C CNN
+	1    800  4800
 	0    -1   -1   0   
 $EndComp
 $Comp
 L Project_Libary:Pad P2
 U 1 1 5BEBFC75
-P 900 5550
-F 0 "P2" H 999 5596 50  0000 L CNN
-F 1 "Pad" H 999 5505 50  0000 L CNN
-F 2 "Custom_Footprints:Pad" H 900 5550 50  0001 C CNN
-F 3 "" H 900 5550 50  0001 C CNN
-	1    900  5550
+P 800 5550
+F 0 "P2" H 899 5596 50  0000 L CNN
+F 1 "Pad" H 899 5505 50  0000 L CNN
+F 2 "Custom_Footprints:Pad" H 800 5550 50  0001 C CNN
+F 3 "" H 800 5550 50  0001 C CNN
+	1    800  5550
 	0    -1   -1   0   
 $EndComp
-Text GLabel 1100 5000 2    50   Output ~ 0
+Text GLabel 1200 4800 2    50   Output ~ 0
 V+
-$Comp
-L power:GND #PWR04
-U 1 1 5BEC2FD4
-P 1550 5600
-F 0 "#PWR04" H 1550 5350 50  0001 C CNN
-F 1 "GND" H 1555 5427 50  0000 C CNN
-F 2 "" H 1550 5600 50  0001 C CNN
-F 3 "" H 1550 5600 50  0001 C CNN
-	1    1550 5600
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1550 5550 1550 5600
-Wire Wire Line
-	1100 5550 1550 5550
 Wire Wire Line
 	1850 1400 1450 1400
 Wire Wire Line
@@ -318,7 +303,7 @@ Wire Wire Line
 	1450 6200 1100 6200
 Text Notes 650  6850 0    50   ~ 0
 Constant 12VDC\nfrom battery
-Text Notes 600  5300 0    50   ~ 0
+Text Notes 600  5200 0    50   ~ 0
 12V PWM from\npower drill output\n
 Wire Wire Line
 	10150 5550 10150 5300
@@ -393,7 +378,7 @@ U 1 1 5C0D215D
 P 4975 6625
 F 0 "J3" H 4825 6525 50  0000 C CNN
 F 1 "Conn_01x02_Male" H 4775 6425 50  0001 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 4975 6625 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical_SMD_Pin1Left" H 4975 6625 50  0001 C CNN
 F 3 "~" H 4975 6625 50  0001 C CNN
 	1    4975 6625
 	0    1    1    0   
@@ -404,7 +389,7 @@ U 1 1 5C0D2243
 P 6175 6625
 F 0 "J5" H 6025 6525 50  0000 C CNN
 F 1 "Conn_01x02_Male" H 5975 6425 50  0001 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 6175 6625 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical_SMD_Pin1Left" H 6175 6625 50  0001 C CNN
 F 3 "~" H 6175 6625 50  0001 C CNN
 	1    6175 6625
 	0    1    1    0   
@@ -415,7 +400,7 @@ U 1 1 5C0D22BD
 P 4975 7275
 F 0 "J4" H 4825 7175 50  0000 C CNN
 F 1 "Conn_01x02_Male" H 4775 7075 50  0001 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 4975 7275 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical_SMD_Pin1Left" H 4975 7275 50  0001 C CNN
 F 3 "~" H 4975 7275 50  0001 C CNN
 	1    4975 7275
 	0    1    1    0   
@@ -426,7 +411,7 @@ U 1 1 5C0D232B
 P 6175 7275
 F 0 "J6" H 6025 7175 50  0000 C CNN
 F 1 "Conn_01x02_Male" H 5975 7075 50  0001 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 6175 7275 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical_SMD_Pin1Left" H 6175 7275 50  0001 C CNN
 F 3 "~" H 6175 7275 50  0001 C CNN
 	1    6175 7275
 	0    1    1    0   
@@ -535,9 +520,9 @@ Wire Wire Line
 Wire Wire Line
 	8750 4800 7950 4800
 Connection ~ 10400 5300
-Text GLabel 8750 4400 0    50   Output ~ 0
+Text GLabel 8750 4500 0    50   Output ~ 0
 OUT_1
-Text GLabel 7950 4400 2    50   Input ~ 0
+Text GLabel 7950 4500 2    50   Input ~ 0
 OUT_1
 Text GLabel 9650 4400 2    50   Output ~ 0
 OUT_2
@@ -551,9 +536,9 @@ Text GLabel 9650 5000 2    50   Output ~ 0
 OUT_4
 Text GLabel 10550 5000 0    50   Input ~ 0
 OUT_4
-Text GLabel 7950 4500 2    50   Input ~ 0
+Text GLabel 7950 4400 2    50   Input ~ 0
 DIR_1
-Text GLabel 8750 4500 0    50   Output ~ 0
+Text GLabel 8750 4400 0    50   Output ~ 0
 DIR_1
 Text GLabel 10550 4500 0    50   Input ~ 0
 DIR_2
@@ -1099,7 +1084,7 @@ U 1 1 5BF6A280
 P 8700 2750
 F 0 "J9" V 8750 2850 50  0000 C CNN
 F 1 "Conn_01x02_Male" H 8500 2550 50  0001 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 8700 2750 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical_SMD_Pin1Left" H 8700 2750 50  0001 C CNN
 F 3 "~" H 8700 2750 50  0001 C CNN
 	1    8700 2750
 	0    1    1    0   
@@ -1172,7 +1157,7 @@ U 1 1 5BFAF9D4
 P 6200 2750
 F 0 "J7" V 6250 2850 50  0000 C CNN
 F 1 "Conn_01x02_Male" H 6000 2550 50  0001 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 6200 2750 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical_SMD_Pin1Left" H 6200 2750 50  0001 C CNN
 F 3 "~" H 6200 2750 50  0001 C CNN
 	1    6200 2750
 	0    1    1    0   
@@ -1245,7 +1230,7 @@ U 1 1 5BFB5C48
 P 3550 2750
 F 0 "J2" V 3600 2850 50  0000 C CNN
 F 1 "Conn_01x02_Male" H 3350 2550 50  0001 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 3550 2750 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical_SMD_Pin1Left" H 3550 2750 50  0001 C CNN
 F 3 "~" H 3550 2750 50  0001 C CNN
 	1    3550 2750
 	0    1    1    0   
@@ -1318,7 +1303,7 @@ U 1 1 5BFBC846
 P 1150 2750
 F 0 "J1" V 1200 2850 50  0000 C CNN
 F 1 "Conn_01x02_Male" H 950 2550 50  0001 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 1150 2750 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical_SMD_Pin1Left" H 1150 2750 50  0001 C CNN
 F 3 "~" H 1150 2750 50  0001 C CNN
 	1    1150 2750
 	0    1    1    0   
@@ -1525,30 +1510,8 @@ Connection ~ 3050 7000
 Connection ~ 2900 7000
 Wire Wire Line
 	2900 7000 3050 7000
-$Comp
-L Project_Libary:Pad P13
-U 1 1 5BF928BD
-P 700 4650
-F 0 "P13" H 799 4696 50  0000 L CNN
-F 1 "Pad" H 799 4605 50  0000 L CNN
-F 2 "Custom_Footprints:Pad" H 700 4650 50  0001 C CNN
-F 3 "" H 700 4650 50  0001 C CNN
-	1    700  4650
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Project_Libary:Pad P14
-U 1 1 5BF92953
-P 1100 4650
-F 0 "P14" H 1199 4696 50  0000 L CNN
-F 1 "Pad" H 1199 4605 50  0000 L CNN
-F 2 "Custom_Footprints:Pad" H 1100 4650 50  0001 C CNN
-F 3 "" H 1100 4650 50  0001 C CNN
-	1    1100 4650
-	0    1    1    0   
-$EndComp
 Wire Wire Line
-	900  5000 1100 5000
+	1000 4800 1200 4800
 Wire Notes Line
 	500  4350 1750 4350
 Wire Notes Line
@@ -1557,4 +1520,5 @@ Wire Wire Line
 	10550 5200 10750 5200
 Wire Wire Line
 	7950 4700 8750 4700
+NoConn ~ 1000 5550
 $EndSCHEMATC

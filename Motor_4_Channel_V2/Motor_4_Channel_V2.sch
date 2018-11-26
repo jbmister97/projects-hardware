@@ -114,7 +114,7 @@ U 1 1 5BEB6C3D
 P 9950 5550
 F 0 "J10" H 9950 5350 50  0000 C CNN
 F 1 "Conn_01x02_Male" H 9750 5350 50  0001 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 9950 5550 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical_SMD_Pin1Left" H 9950 5550 50  0001 C CNN
 F 3 "~" H 9950 5550 50  0001 C CNN
 	1    9950 5550
 	1    0    0    -1  
@@ -378,7 +378,7 @@ U 1 1 5C0D215D
 P 4975 6625
 F 0 "J3" H 4825 6525 50  0000 C CNN
 F 1 "Conn_01x02_Male" H 4775 6425 50  0001 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 4975 6625 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical_SMD_Pin1Left" H 4975 6625 50  0001 C CNN
 F 3 "~" H 4975 6625 50  0001 C CNN
 	1    4975 6625
 	0    1    1    0   
@@ -389,7 +389,7 @@ U 1 1 5C0D2243
 P 6175 6625
 F 0 "J5" H 6025 6525 50  0000 C CNN
 F 1 "Conn_01x02_Male" H 5975 6425 50  0001 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 6175 6625 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical_SMD_Pin1Left" H 6175 6625 50  0001 C CNN
 F 3 "~" H 6175 6625 50  0001 C CNN
 	1    6175 6625
 	0    1    1    0   
@@ -400,7 +400,7 @@ U 1 1 5C0D22BD
 P 4975 7275
 F 0 "J4" H 4825 7175 50  0000 C CNN
 F 1 "Conn_01x02_Male" H 4775 7075 50  0001 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 4975 7275 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical_SMD_Pin1Left" H 4975 7275 50  0001 C CNN
 F 3 "~" H 4975 7275 50  0001 C CNN
 	1    4975 7275
 	0    1    1    0   
@@ -411,7 +411,7 @@ U 1 1 5C0D232B
 P 6175 7275
 F 0 "J6" H 6025 7175 50  0000 C CNN
 F 1 "Conn_01x02_Male" H 5975 7075 50  0001 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 6175 7275 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical_SMD_Pin1Left" H 6175 7275 50  0001 C CNN
 F 3 "~" H 6175 7275 50  0001 C CNN
 	1    6175 7275
 	0    1    1    0   
@@ -520,37 +520,37 @@ Wire Wire Line
 Wire Wire Line
 	8750 4800 7950 4800
 Connection ~ 10400 5300
-Text GLabel 8750 4400 0    50   Output ~ 0
-OUT_1
-Text GLabel 7950 4400 2    50   Input ~ 0
-OUT_1
-Text GLabel 9650 4400 2    50   Output ~ 0
-OUT_2
-Text GLabel 10550 4400 0    50   Input ~ 0
-OUT_2
-Text GLabel 9650 4700 2    50   Output ~ 0
-OUT_3
-Text GLabel 10550 4700 0    50   Input ~ 0
-OUT_3
-Text GLabel 9650 5000 2    50   Output ~ 0
-OUT_4
-Text GLabel 10550 5000 0    50   Input ~ 0
-OUT_4
-Text GLabel 7950 4500 2    50   Input ~ 0
-DIR_1
 Text GLabel 8750 4500 0    50   Output ~ 0
-DIR_1
-Text GLabel 10550 4500 0    50   Input ~ 0
-DIR_2
+OUT_1
+Text GLabel 7950 4500 2    50   Input ~ 0
+OUT_1
 Text GLabel 9650 4500 2    50   Output ~ 0
-DIR_2
-Text GLabel 10550 4800 0    50   Input ~ 0
-DIR_3
+OUT_2
+Text GLabel 10550 4500 0    50   Input ~ 0
+OUT_2
 Text GLabel 9650 4800 2    50   Output ~ 0
-DIR_3
-Text GLabel 10550 5100 0    50   Input ~ 0
-DIR_4
+OUT_3
+Text GLabel 10550 4800 0    50   Input ~ 0
+OUT_3
 Text GLabel 9650 5100 2    50   Output ~ 0
+OUT_4
+Text GLabel 10550 5100 0    50   Input ~ 0
+OUT_4
+Text GLabel 7950 4400 2    50   Input ~ 0
+DIR_1
+Text GLabel 8750 4400 0    50   Output ~ 0
+DIR_1
+Text GLabel 10550 4400 0    50   Input ~ 0
+DIR_2
+Text GLabel 9650 4400 2    50   Output ~ 0
+DIR_2
+Text GLabel 10550 4700 0    50   Input ~ 0
+DIR_3
+Text GLabel 9650 4700 2    50   Output ~ 0
+DIR_3
+Text GLabel 10550 5000 0    50   Input ~ 0
+DIR_4
+Text GLabel 9650 5000 2    50   Output ~ 0
 DIR_4
 Text GLabel 1850 2950 3    50   Input ~ 0
 OUT_1
@@ -1084,7 +1084,7 @@ U 1 1 5BF6A280
 P 8700 2750
 F 0 "J9" V 8750 2850 50  0000 C CNN
 F 1 "Conn_01x02_Male" H 8500 2550 50  0001 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 8700 2750 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical_SMD_Pin1Left" H 8700 2750 50  0001 C CNN
 F 3 "~" H 8700 2750 50  0001 C CNN
 	1    8700 2750
 	0    1    1    0   
@@ -1157,7 +1157,7 @@ U 1 1 5BFAF9D4
 P 6200 2750
 F 0 "J7" V 6250 2850 50  0000 C CNN
 F 1 "Conn_01x02_Male" H 6000 2550 50  0001 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 6200 2750 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical_SMD_Pin1Left" H 6200 2750 50  0001 C CNN
 F 3 "~" H 6200 2750 50  0001 C CNN
 	1    6200 2750
 	0    1    1    0   
@@ -1230,7 +1230,7 @@ U 1 1 5BFB5C48
 P 3550 2750
 F 0 "J2" V 3600 2850 50  0000 C CNN
 F 1 "Conn_01x02_Male" H 3350 2550 50  0001 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 3550 2750 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical_SMD_Pin1Left" H 3550 2750 50  0001 C CNN
 F 3 "~" H 3550 2750 50  0001 C CNN
 	1    3550 2750
 	0    1    1    0   
@@ -1303,7 +1303,7 @@ U 1 1 5BFBC846
 P 1150 2750
 F 0 "J1" V 1200 2850 50  0000 C CNN
 F 1 "Conn_01x02_Male" H 950 2550 50  0001 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 1150 2750 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical_SMD_Pin1Left" H 1150 2750 50  0001 C CNN
 F 3 "~" H 1150 2750 50  0001 C CNN
 	1    1150 2750
 	0    1    1    0   
