@@ -365,7 +365,7 @@ $Comp
 L Connector:Conn_01x02_Male J3
 U 1 1 5C0D215D
 P 4700 6550
-F 0 "J3" H 4550 6450 50  0000 C CNN
+F 0 "J3" H 4600 6500 50  0000 C CNN
 F 1 "Conn_01x02_Male" H 4500 6350 50  0001 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical_SMD_Pin1Left" H 4700 6550 50  0001 C CNN
 F 3 "~" H 4700 6550 50  0001 C CNN
@@ -376,7 +376,7 @@ $Comp
 L Connector:Conn_01x02_Male J5
 U 1 1 5C0D2243
 P 6150 6550
-F 0 "J5" H 6000 6450 50  0000 C CNN
+F 0 "J5" H 6075 6500 50  0000 C CNN
 F 1 "Conn_01x02_Male" H 5950 6350 50  0001 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical_SMD_Pin1Left" H 6150 6550 50  0001 C CNN
 F 3 "~" H 6150 6550 50  0001 C CNN
@@ -387,7 +387,7 @@ $Comp
 L Connector:Conn_01x02_Male J4
 U 1 1 5C0D22BD
 P 4700 7275
-F 0 "J4" H 4550 7175 50  0000 C CNN
+F 0 "J4" H 4600 7225 50  0000 C CNN
 F 1 "Conn_01x02_Male" H 4500 7075 50  0001 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical_SMD_Pin1Left" H 4700 7275 50  0001 C CNN
 F 3 "~" H 4700 7275 50  0001 C CNN
@@ -398,7 +398,7 @@ $Comp
 L Connector:Conn_01x02_Male J6
 U 1 1 5C0D232B
 P 6125 7275
-F 0 "J6" H 5975 7175 50  0000 C CNN
+F 0 "J6" H 6025 7225 50  0000 C CNN
 F 1 "Conn_01x02_Male" H 5925 7075 50  0001 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical_SMD_Pin1Left" H 6125 7275 50  0001 C CNN
 F 3 "~" H 6125 7275 50  0001 C CNN
@@ -879,28 +879,6 @@ F 3 "~" H 8500 3100 50  0001 C CNN
 	1    8500 3100
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:R R10
-U 1 1 5BF9B2EE
-P 8800 3100
-F 0 "R10" H 8870 3146 50  0000 L CNN
-F 1 "R" H 8870 3055 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 8730 3100 50  0001 C CNN
-F 3 "~" H 8800 3100 50  0001 C CNN
-	1    8800 3100
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR026
-U 1 1 5BF9B2F5
-P 8800 3300
-F 0 "#PWR026" H 8800 3050 50  0001 C CNN
-F 1 "GND" H 8805 3127 50  0000 C CNN
-F 2 "" H 8800 3300 50  0001 C CNN
-F 3 "" H 8800 3300 50  0001 C CNN
-	1    8800 3300
-	1    0    0    -1  
-$EndComp
 Text GLabel 4450 4300 2    50   Output ~ 0
 RED_1
 Text GLabel 4450 4500 2    50   Output ~ 0
@@ -917,9 +895,9 @@ Text GLabel 7000 5250 2    50   Output ~ 0
 RED_4
 Text GLabel 7000 5450 2    50   Output ~ 0
 GREEN_4
-Text GLabel 8400 2950 0    50   Input ~ 0
+Text GLabel 8500 3250 3    50   Input ~ 0
 RED_4
-Text GLabel 8900 2950 2    50   Input ~ 0
+Text GLabel 8800 3250 3    50   Input ~ 0
 GREEN_4
 Wire Notes Line
 	7450 4025 11225 4025
@@ -1053,31 +1031,10 @@ F 3 "~" H 8700 2750 50  0001 C CNN
 	1    8700 2750
 	0    1    1    0   
 $EndComp
-$Comp
-L power:GND #PWR024
-U 1 1 5BF718D9
-P 8500 3300
-F 0 "#PWR024" H 8500 3050 50  0001 C CNN
-F 1 "GND" H 8505 3127 50  0000 C CNN
-F 2 "" H 8500 3300 50  0001 C CNN
-F 3 "" H 8500 3300 50  0001 C CNN
-	1    8500 3300
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8400 2950 8500 2950
 Wire Wire Line
 	8700 2950 8800 2950
-Connection ~ 8500 2950
 Wire Wire Line
 	8500 2950 8600 2950
-Wire Wire Line
-	8800 2950 8900 2950
-Connection ~ 8800 2950
-Wire Wire Line
-	8500 3300 8500 3250
-Wire Wire Line
-	8800 3300 8800 3250
 $Comp
 L Device:R R5
 U 1 1 5BFAF9BE
@@ -1089,31 +1046,9 @@ F 3 "~" H 6000 3100 50  0001 C CNN
 	1    6000 3100
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:R R6
-U 1 1 5BFAF9C5
-P 6300 3100
-F 0 "R6" H 6370 3146 50  0000 L CNN
-F 1 "R" H 6370 3055 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 6230 3100 50  0001 C CNN
-F 3 "~" H 6300 3100 50  0001 C CNN
-	1    6300 3100
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR019
-U 1 1 5BFAF9CC
-P 6300 3300
-F 0 "#PWR019" H 6300 3050 50  0001 C CNN
-F 1 "GND" H 6305 3127 50  0000 C CNN
-F 2 "" H 6300 3300 50  0001 C CNN
-F 3 "" H 6300 3300 50  0001 C CNN
-	1    6300 3300
-	1    0    0    -1  
-$EndComp
-Text GLabel 5900 2950 0    50   Input ~ 0
+Text GLabel 6000 3250 3    50   Input ~ 0
 RED_3
-Text GLabel 6400 2950 2    50   Input ~ 0
+Text GLabel 6300 3250 3    50   Input ~ 0
 GREEN_3
 $Comp
 L Connector:Conn_01x02_Male J7
@@ -1126,31 +1061,8 @@ F 3 "~" H 6200 2750 50  0001 C CNN
 	1    6200 2750
 	0    1    1    0   
 $EndComp
-$Comp
-L power:GND #PWR016
-U 1 1 5BFAF9DB
-P 6000 3300
-F 0 "#PWR016" H 6000 3050 50  0001 C CNN
-F 1 "GND" H 6005 3127 50  0000 C CNN
-F 2 "" H 6000 3300 50  0001 C CNN
-F 3 "" H 6000 3300 50  0001 C CNN
-	1    6000 3300
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5900 2950 6000 2950
-Wire Wire Line
-	6200 2950 6300 2950
-Connection ~ 6000 2950
 Wire Wire Line
 	6000 2950 6100 2950
-Wire Wire Line
-	6300 2950 6400 2950
-Connection ~ 6300 2950
-Wire Wire Line
-	6000 3300 6000 3250
-Wire Wire Line
-	6300 3300 6300 3250
 $Comp
 L Device:R R3
 U 1 1 5BFB5C32
@@ -1162,31 +1074,9 @@ F 3 "~" H 3350 3100 50  0001 C CNN
 	1    3350 3100
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:R R4
-U 1 1 5BFB5C39
-P 3650 3100
-F 0 "R4" H 3720 3146 50  0000 L CNN
-F 1 "R" H 3720 3055 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 3580 3100 50  0001 C CNN
-F 3 "~" H 3650 3100 50  0001 C CNN
-	1    3650 3100
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR09
-U 1 1 5BFB5C40
-P 3650 3300
-F 0 "#PWR09" H 3650 3050 50  0001 C CNN
-F 1 "GND" H 3655 3127 50  0000 C CNN
-F 2 "" H 3650 3300 50  0001 C CNN
-F 3 "" H 3650 3300 50  0001 C CNN
-	1    3650 3300
-	1    0    0    -1  
-$EndComp
-Text GLabel 3250 2950 0    50   Input ~ 0
+Text GLabel 3350 3250 3    50   Input ~ 0
 RED_2
-Text GLabel 3750 2950 2    50   Input ~ 0
+Text GLabel 3650 3250 3    50   Input ~ 0
 GREEN_2
 $Comp
 L Connector:Conn_01x02_Male J2
@@ -1199,31 +1089,8 @@ F 3 "~" H 3550 2750 50  0001 C CNN
 	1    3550 2750
 	0    1    1    0   
 $EndComp
-$Comp
-L power:GND #PWR08
-U 1 1 5BFB5C4F
-P 3350 3300
-F 0 "#PWR08" H 3350 3050 50  0001 C CNN
-F 1 "GND" H 3355 3127 50  0000 C CNN
-F 2 "" H 3350 3300 50  0001 C CNN
-F 3 "" H 3350 3300 50  0001 C CNN
-	1    3350 3300
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3250 2950 3350 2950
-Wire Wire Line
-	3550 2950 3650 2950
-Connection ~ 3350 2950
 Wire Wire Line
 	3350 2950 3450 2950
-Wire Wire Line
-	3650 2950 3750 2950
-Connection ~ 3650 2950
-Wire Wire Line
-	3350 3300 3350 3250
-Wire Wire Line
-	3650 3300 3650 3250
 $Comp
 L Device:R R1
 U 1 1 5BFBC830
@@ -1235,31 +1102,9 @@ F 3 "~" H 950 3100 50  0001 C CNN
 	1    950  3100
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:R R2
-U 1 1 5BFBC837
-P 1250 3100
-F 0 "R2" H 1320 3146 50  0000 L CNN
-F 1 "R" H 1320 3055 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 1180 3100 50  0001 C CNN
-F 3 "~" H 1250 3100 50  0001 C CNN
-	1    1250 3100
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR02
-U 1 1 5BFBC83E
-P 1250 3300
-F 0 "#PWR02" H 1250 3050 50  0001 C CNN
-F 1 "GND" H 1255 3127 50  0000 C CNN
-F 2 "" H 1250 3300 50  0001 C CNN
-F 3 "" H 1250 3300 50  0001 C CNN
-	1    1250 3300
-	1    0    0    -1  
-$EndComp
-Text GLabel 850  2950 0    50   Input ~ 0
+Text GLabel 950  3250 3    50   Input ~ 0
 RED_1
-Text GLabel 1350 2950 2    50   Input ~ 0
+Text GLabel 1250 3250 3    50   Input ~ 0
 GREEN_1
 $Comp
 L Connector:Conn_01x02_Male J1
@@ -1272,31 +1117,8 @@ F 3 "~" H 1150 2750 50  0001 C CNN
 	1    1150 2750
 	0    1    1    0   
 $EndComp
-$Comp
-L power:GND #PWR01
-U 1 1 5BFBC84D
-P 950 3300
-F 0 "#PWR01" H 950 3050 50  0001 C CNN
-F 1 "GND" H 955 3127 50  0000 C CNN
-F 2 "" H 950 3300 50  0001 C CNN
-F 3 "" H 950 3300 50  0001 C CNN
-	1    950  3300
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	850  2950 950  2950
-Wire Wire Line
-	1150 2950 1250 2950
-Connection ~ 950  2950
 Wire Wire Line
 	950  2950 1050 2950
-Wire Wire Line
-	1250 2950 1350 2950
-Connection ~ 1250 2950
-Wire Wire Line
-	950  3300 950  3250
-Wire Wire Line
-	1250 3300 1250 3250
 $Comp
 L Device:R R12
 U 1 1 5BF19AB6
@@ -1603,4 +1425,18 @@ Wire Wire Line
 Connection ~ 10400 5300
 Wire Wire Line
 	10400 5300 10400 5800
+Wire Wire Line
+	1150 2950 1250 2950
+Wire Wire Line
+	1250 2950 1250 3250
+Wire Wire Line
+	3550 2950 3650 2950
+Wire Wire Line
+	3650 2950 3650 3250
+Wire Wire Line
+	6200 2950 6300 2950
+Wire Wire Line
+	6300 2950 6300 3250
+Wire Wire Line
+	8800 2950 8800 3250
 $EndSCHEMATC
