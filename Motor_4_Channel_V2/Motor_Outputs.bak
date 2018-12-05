@@ -770,21 +770,21 @@ Wire Wire Line
 	6500 7300 6500 7200
 Wire Wire Line
 	1850 7300 1850 7200
-Text HLabel 1900 1400 1    50   Output ~ 0
-OUT_1+
 Text HLabel 2200 1400 1    50   Output ~ 0
+OUT_1+
+Text HLabel 1900 1400 1    50   Output ~ 0
 OUT_1-
-Text HLabel 4400 1400 1    50   Output ~ 0
-OUT_2+
 Text HLabel 4700 1400 1    50   Output ~ 0
+OUT_2+
+Text HLabel 4400 1400 1    50   Output ~ 0
 OUT_2-
-Text HLabel 7000 1400 1    50   Output ~ 0
-OUT_3+
 Text HLabel 7300 1400 1    50   Output ~ 0
+OUT_3+
+Text HLabel 7000 1400 1    50   Output ~ 0
 OUT_3-
-Text HLabel 9550 1400 1    50   Output ~ 0
-OUT_4+
 Text HLabel 9850 1400 1    50   Output ~ 0
+OUT_4+
+Text HLabel 9550 1400 1    50   Output ~ 0
 OUT_4-
 Text HLabel 925  5175 0    50   Input ~ 0
 DIR_1
