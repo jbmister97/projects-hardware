@@ -399,8 +399,6 @@ Wire Wire Line
 	7100 4300 7250 4300
 Connection ~ 7250 4300
 Wire Wire Line
-	7450 3550 7450 3750
-Wire Wire Line
 	7450 3500 7600 3500
 Wire Wire Line
 	7600 3200 7350 3200
@@ -683,14 +681,10 @@ Text GLabel 6350 4150 2    50   BiDi ~ 0
 P0.23
 Text GLabel 6350 4250 2    50   BiDi ~ 0
 P0.22
-Text GLabel 6350 4350 2    50   BiDi ~ 0
-SWDIO
-Text GLabel 6350 4450 2    50   Input ~ 0
-SWDCLK
 Text GLabel 4800 5000 3    50   BiDi ~ 0
-P0.11
+P0.11_SDA
 Text GLabel 4900 5000 3    50   BiDi ~ 0
-P0.12
+P0.12_SCL
 Text GLabel 5000 5000 3    50   BiDi ~ 0
 P0.13
 Text GLabel 5100 5000 3    50   BiDi ~ 0
@@ -700,7 +694,7 @@ P0.15
 Text GLabel 5300 5000 3    50   BiDi ~ 0
 P0.16
 Text GLabel 5400 5000 3    50   BiDi ~ 0
-P0.16
+P0.17
 Text GLabel 5500 5000 3    50   BiDi ~ 0
 SWO
 Text GLabel 5600 5000 3    50   BiDi ~ 0
@@ -715,4 +709,10 @@ Text HLabel 4250 2100 0    50   Input ~ 0
 VCC
 Text HLabel 6750 2350 0    50   Input ~ 0
 VCC
+Wire Wire Line
+	7450 3500 7450 3750
+Text HLabel 6350 4350 2    50   BiDi ~ 0
+SWDIO
+Text HLabel 6350 4450 2    50   Input ~ 0
+SWDCLK
 $EndSCHEMATC

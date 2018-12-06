@@ -395,10 +395,6 @@ Wire Wire Line
 Connection ~ 2600 4950
 Connection ~ 1600 4950
 Wire Wire Line
-	1600 4950 1300 4950
-Wire Wire Line
-	2600 4950 3000 4950
-Wire Wire Line
 	1600 5250 2200 5250
 Wire Wire Line
 	1600 4950 1900 4950
@@ -432,11 +428,6 @@ Wire Wire Line
 	1900 6600 1800 6600
 Wire Wire Line
 	1800 6600 1800 6650
-Wire Wire Line
-	3000 4950 3000 5650
-Connection ~ 3000 4950
-Wire Wire Line
-	3000 4950 3550 4950
 $Comp
 L Device:L L?
 U 1 1 5BF591B1
@@ -506,7 +497,7 @@ Text Label 5500 2150 0    50   ~ 0
 V+
 Wire Wire Line
 	1400 6500 1200 6500
-Text Label 1300 4950 0    50   ~ 0
+Text Label 975  4950 0    50   ~ 0
 V+
 Wire Wire Line
 	1900 6500 1800 6500
@@ -524,13 +515,6 @@ Wire Wire Line
 	1800 6250 1800 6050
 Wire Wire Line
 	2250 6050 2350 6050
-Connection ~ 2700 6700
-Wire Wire Line
-	2700 6700 2550 6700
-Wire Wire Line
-	3000 5650 1200 5650
-Wire Wire Line
-	1200 5650 1200 6500
 $Comp
 L power:GND #PWR?
 U 1 1 5BF67FF9
@@ -546,8 +530,6 @@ F 3 "" H 2700 7050 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	2700 7000 2700 7050
-Wire Wire Line
-	2700 6700 3550 6700
 Wire Wire Line
 	2700 6700 2700 6250
 Wire Wire Line
@@ -570,5 +552,137 @@ Wire Notes Line
 Text Notes 1300 4400 0    50   ~ 0
 3.3V regulated output w/ boost converter for 5V
 Wire Notes Line
-	4500 7750 4500 3900
+	6175 7750 6175 3900
+Wire Wire Line
+	2600 4950 3125 4950
+Wire Wire Line
+	1200 4950 1600 4950
+Wire Wire Line
+	1200 4950 1200 6500
+Wire Wire Line
+	1200 4950 975  4950
+Connection ~ 1200 4950
+Wire Wire Line
+	2550 6700 3275 6700
+$Comp
+L Project_Libary:LP5907QMFX-3.0Q1 U?
+U 1 1 5C08E5C3
+P 3825 5700
+F 0 "U?" H 3825 6015 50  0000 C CNN
+F 1 "LP5907QMFX-3.0Q1" H 3825 5924 50  0000 C CNN
+F 2 "" H 3775 6150 50  0001 C CNN
+F 3 "" H 3775 6150 50  0001 C CNN
+	1    3825 5700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3475 5650 3125 5650
+Wire Wire Line
+	3125 5650 3125 4950
+Connection ~ 3125 4950
+Wire Wire Line
+	3125 4950 3550 4950
+Wire Wire Line
+	3475 5750 3125 5750
+Wire Wire Line
+	3125 5750 3125 5650
+Connection ~ 3125 5650
+$Comp
+L power:GND #PWR?
+U 1 1 5C096B77
+P 3825 6050
+AR Path="/5C096B77" Ref="#PWR?"  Part="1" 
+AR Path="/5BF31556/5C096B77" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 3825 5800 50  0001 C CNN
+F 1 "GND" H 3830 5877 50  0000 C CNN
+F 2 "" H 3825 6050 50  0001 C CNN
+F 3 "" H 3825 6050 50  0001 C CNN
+	1    3825 6050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3825 6000 3825 6050
+Wire Wire Line
+	4175 5650 4800 5650
+Text HLabel 4800 5650 2    50   Output ~ 0
+3V
+$Comp
+L Project_Libary:LMV331ICT U?
+U 1 1 5C09D77C
+P 4200 7250
+F 0 "U?" H 4225 7615 50  0000 C CNN
+F 1 "LMV331ICT" H 4225 7524 50  0000 C CNN
+F 2 "" H 4150 7550 50  0001 C CNN
+F 3 "" H 4150 7550 50  0001 C CNN
+	1    4200 7250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5C0A05AB
+P 3275 6850
+F 0 "R?" H 3345 6896 50  0000 L CNN
+F 1 "R" H 3345 6805 50  0000 L CNN
+F 2 "" V 3205 6850 50  0001 C CNN
+F 3 "~" H 3275 6850 50  0001 C CNN
+	1    3275 6850
+	1    0    0    -1  
+$EndComp
+Connection ~ 3275 6700
+Wire Wire Line
+	3275 6700 3550 6700
+$Comp
+L Device:R R?
+U 1 1 5C0A072D
+P 3275 7350
+F 0 "R?" H 3345 7396 50  0000 L CNN
+F 1 "R" H 3345 7305 50  0000 L CNN
+F 2 "" V 3205 7350 50  0001 C CNN
+F 3 "~" H 3275 7350 50  0001 C CNN
+	1    3275 7350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5C0A07A3
+P 3275 7550
+AR Path="/5C0A07A3" Ref="#PWR?"  Part="1" 
+AR Path="/5BF31556/5C0A07A3" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 3275 7300 50  0001 C CNN
+F 1 "GND" H 3280 7377 50  0000 C CNN
+F 2 "" H 3275 7550 50  0001 C CNN
+F 3 "" H 3275 7550 50  0001 C CNN
+	1    3275 7550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3275 7000 3275 7150
+Wire Wire Line
+	3275 7500 3275 7550
+Wire Wire Line
+	3850 7150 3275 7150
+Connection ~ 3275 7150
+Wire Wire Line
+	3275 7150 3275 7200
+$Comp
+L power:GND #PWR?
+U 1 1 5C0A675B
+P 3575 7275
+AR Path="/5C0A675B" Ref="#PWR?"  Part="1" 
+AR Path="/5BF31556/5C0A675B" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 3575 7025 50  0001 C CNN
+F 1 "GND" H 3580 7102 50  0000 C CNN
+F 2 "" H 3575 7275 50  0001 C CNN
+F 3 "" H 3575 7275 50  0001 C CNN
+	1    3575 7275
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3850 7250 3575 7250
+Wire Wire Line
+	3575 7250 3575 7275
+Wire Wire Line
+	3850 7350 3725 7350
+Text Label 3725 7350 0    50   ~ 0
+V+
 $EndSCHEMATC
