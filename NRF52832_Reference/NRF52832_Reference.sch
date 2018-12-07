@@ -59,12 +59,12 @@ $EndComp
 Text Notes 9250 2625 0    50   ~ 0
 SWD Interface
 $Sheet
-S 1000 1100 900  750 
+S 925  1025 900  750 
 U 5BF31556
 F0 "Sheet5BF31555" 50
 F1 "nRF52_Power.sch" 50
-F2 "3V3" O R 1900 1300 50 
-F3 "5V" O R 1900 1650 50 
+F2 "3V3" O R 1825 1225 50 
+F3 "5V" O R 1825 1575 50 
 $EndSheet
 Text Notes 1150 750  0    50   ~ 0
 Power
@@ -117,12 +117,12 @@ $EndComp
 Wire Wire Line
 	10100 6000 10100 6100
 Wire Wire Line
-	1900 1300 2150 1300
+	1825 1225 2075 1225
 Wire Wire Line
-	1900 1650 2150 1650
-Text GLabel 2150 1300 2    50   Output ~ 0
+	1825 1575 2075 1575
+Text GLabel 2075 1225 2    50   Output ~ 0
 3V3_Ref
-Text GLabel 2150 1650 2    50   Output ~ 0
+Text GLabel 2075 1575 2    50   Output ~ 0
 5V_Ref
 Text GLabel 10400 5300 2    50   Input ~ 0
 3V3_Ref
