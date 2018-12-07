@@ -15,13 +15,13 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Sheet
-S 8100 4850 1800 1400
+S 7675 4850 1800 1400
 U 5BF15572
 F0 "Sheet5BF15571" 50
 F1 "nRF52832_base.sch" 50
-F2 "VCC" I R 9900 5300 50 
-F3 "SWDIO" B R 9900 5000 50 
-F4 "SWDCLK" I R 9900 5125 50 
+F2 "VCC" I R 9475 5300 50 
+F3 "SWDIO" B R 9475 5100 50 
+F4 "SWDCLK" I R 9475 4975 50 
 $EndSheet
 $Comp
 L Connector:Conn_01x10_Male J?
@@ -48,15 +48,15 @@ $EndComp
 $Comp
 L Connector:Conn_01x10_Male J?
 U 1 1 5BF19F05
-P 5400 3025
-F 0 "J?" H 5506 3603 50  0000 C CNN
-F 1 "Conn_01x10_Male" H 5506 3512 50  0000 C CNN
-F 2 "" H 5400 3025 50  0001 C CNN
-F 3 "~" H 5400 3025 50  0001 C CNN
-	1    5400 3025
+P 5425 1675
+F 0 "J?" H 5531 2253 50  0000 C CNN
+F 1 "Conn_01x10_Male" H 5531 2162 50  0000 C CNN
+F 2 "" H 5425 1675 50  0001 C CNN
+F 3 "~" H 5425 1675 50  0001 C CNN
+	1    5425 1675
 	1    0    0    -1  
 $EndComp
-Text Notes 9250 2625 0    50   ~ 0
+Text Notes 7900 2350 0    50   ~ 0
 SWD Interface
 $Sheet
 S 925  1025 900  750 
@@ -69,53 +69,42 @@ $EndSheet
 Text Notes 1150 750  0    50   ~ 0
 Power
 $Comp
-L Connector:Conn_ARM_JTAG_SWD_10 J?
-U 1 1 5BF323A1
-P 9400 3500
-F 0 "J?" H 8960 3546 50  0000 R CNN
-F 1 "Conn_ARM_JTAG_SWD_10" H 8960 3455 50  0000 R CNN
-F 2 "Connector_PinHeader_1.27mm:PinHeader_2x05_P1.27mm_Vertical_SMD" H 9450 2950 50  0001 L TNN
-F 3 "http://infocenter.arm.com/help/topic/com.arm.doc.faqs/attached/13634/cortex_debug_connectors.pdf" V 9050 2250 50  0001 C CNN
-	1    9400 3500
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:LED D?
 U 1 1 5BF34D0C
-P 10100 5850
-F 0 "D?" V 10138 5733 50  0000 R CNN
-F 1 "LED" V 10047 5733 50  0000 R CNN
-F 2 "" H 10100 5850 50  0001 C CNN
-F 3 "~" H 10100 5850 50  0001 C CNN
-	1    10100 5850
+P 9675 5850
+F 0 "D?" V 9713 5733 50  0000 R CNN
+F 1 "LED" V 9622 5733 50  0000 R CNN
+F 2 "" H 9675 5850 50  0001 C CNN
+F 3 "~" H 9675 5850 50  0001 C CNN
+	1    9675 5850
 	0    -1   -1   0   
 $EndComp
 $Comp
 L Device:R R?
 U 1 1 5BF34E62
-P 10100 5450
-F 0 "R?" H 10170 5496 50  0000 L CNN
-F 1 "R" H 10170 5405 50  0000 L CNN
-F 2 "" V 10030 5450 50  0001 C CNN
-F 3 "~" H 10100 5450 50  0001 C CNN
-	1    10100 5450
+P 9675 5450
+F 0 "R?" H 9745 5496 50  0000 L CNN
+F 1 "R" H 9745 5405 50  0000 L CNN
+F 2 "" V 9605 5450 50  0001 C CNN
+F 3 "~" H 9675 5450 50  0001 C CNN
+	1    9675 5450
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	10100 5700 10100 5600
+	9675 5700 9675 5600
 $Comp
 L power:GND #PWR?
 U 1 1 5BF34FFE
-P 10100 6100
-F 0 "#PWR?" H 10100 5850 50  0001 C CNN
-F 1 "GND" H 10105 5927 50  0000 C CNN
-F 2 "" H 10100 6100 50  0001 C CNN
-F 3 "" H 10100 6100 50  0001 C CNN
-	1    10100 6100
+P 9675 6100
+F 0 "#PWR?" H 9675 5850 50  0001 C CNN
+F 1 "GND" H 9680 5927 50  0000 C CNN
+F 2 "" H 9675 6100 50  0001 C CNN
+F 3 "" H 9675 6100 50  0001 C CNN
+	1    9675 6100
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	10100 6000 10100 6100
+	9675 6000 9675 6100
 Wire Wire Line
 	1825 1225 2075 1225
 Wire Wire Line
@@ -124,14 +113,12 @@ Text GLabel 2075 1225 2    50   Output ~ 0
 3V3_Ref
 Text GLabel 2075 1575 2    50   Output ~ 0
 5V_Ref
-Text GLabel 10400 5300 2    50   Input ~ 0
+Text GLabel 10425 5300 2    50   Input ~ 0
 3V3_Ref
+Connection ~ 9675 5300
 Wire Wire Line
-	10400 5300 10100 5300
-Connection ~ 10100 5300
-Wire Wire Line
-	10100 5300 9900 5300
-Text Notes 10500 5900 0    50   ~ 0
+	9675 5300 9475 5300
+Text Notes 10075 5900 0    50   ~ 0
 Power\nLED
 $Comp
 L Project_Libary:AT34C04-X5M-T U?
@@ -461,4 +448,186 @@ Wire Notes Line
 	475  5425 6950 5425
 Wire Notes Line
 	6950 5425 6950 7775
+Text GLabel 8700 3425 2    50   BiDi ~ 0
+SWO
+Text GLabel 9275 3625 2    50   BiDi ~ 0
+RESET
+$Comp
+L Device:R R?
+U 1 1 5C0A68CE
+P 8550 3775
+F 0 "R?" H 8620 3821 50  0000 L CNN
+F 1 "10k" H 8620 3730 50  0000 L CNN
+F 2 "" V 8480 3775 50  0001 C CNN
+F 3 "~" H 8550 3775 50  0001 C CNN
+	1    8550 3775
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_SPST SW?
+U 1 1 5C0A6C29
+P 8975 3825
+F 0 "SW?" V 8875 3625 50  0000 L CNN
+F 1 "SW_SPST" V 9020 3923 50  0001 L CNN
+F 2 "" H 8975 3825 50  0001 C CNN
+F 3 "" H 8975 3825 50  0001 C CNN
+	1    8975 3825
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5C0A6E26
+P 9175 3775
+F 0 "C?" H 9290 3821 50  0000 L CNN
+F 1 "C" H 9290 3730 50  0000 L CNN
+F 2 "" H 9213 3625 50  0001 C CNN
+F 3 "~" H 9175 3775 50  0001 C CNN
+	1    9175 3775
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5C0A6FF1
+P 9175 4150
+F 0 "#PWR?" H 9175 3900 50  0001 C CNN
+F 1 "GND" H 9180 3977 50  0000 C CNN
+F 2 "" H 9175 4150 50  0001 C CNN
+F 3 "" H 9175 4150 50  0001 C CNN
+	1    9175 4150
+	1    0    0    -1  
+$EndComp
+Text GLabel 8550 3925 3    50   Input ~ 0
+3V3_Ref
+Wire Wire Line
+	8375 3625 8550 3625
+Connection ~ 8975 3625
+Wire Wire Line
+	8975 3625 9175 3625
+Connection ~ 9175 3625
+Wire Wire Line
+	9175 3625 9275 3625
+Wire Wire Line
+	8975 4025 9175 4025
+Wire Wire Line
+	9175 4025 9175 4150
+Wire Wire Line
+	9175 3925 9175 4025
+Connection ~ 9175 4025
+$Comp
+L Connector_Generic:Conn_02x05_Odd_Even J?
+U 1 1 5C0B7E6E
+P 8075 3425
+F 0 "J?" H 8125 3750 50  0000 C CNN
+F 1 "Conn_02x05_Odd_Even" H 8125 3751 50  0001 C CNN
+F 2 "" H 8075 3425 50  0001 C CNN
+F 3 "~" H 8075 3425 50  0001 C CNN
+	1    8075 3425
+	1    0    0    -1  
+$EndComp
+Connection ~ 8550 3625
+Wire Wire Line
+	8550 3625 8975 3625
+NoConn ~ 8375 3525
+Wire Wire Line
+	9475 4975 9625 4975
+Wire Wire Line
+	9625 4975 9625 4025
+Wire Wire Line
+	9625 3325 8375 3325
+Wire Wire Line
+	9475 5100 9750 5100
+Wire Wire Line
+	9750 5100 9750 3225
+Wire Wire Line
+	9750 3225 8925 3225
+$Comp
+L Device:R R?
+U 1 1 5C0BEE0E
+P 8625 2975
+F 0 "R?" H 8695 3021 50  0000 L CNN
+F 1 "10k" H 8695 2930 50  0000 L CNN
+F 2 "" V 8555 2975 50  0001 C CNN
+F 3 "~" H 8625 2975 50  0001 C CNN
+	1    8625 2975
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5C0BEE88
+P 8925 2975
+F 0 "R?" H 8995 3021 50  0000 L CNN
+F 1 "10k" H 8995 2930 50  0000 L CNN
+F 2 "" V 8855 2975 50  0001 C CNN
+F 3 "~" H 8925 2975 50  0001 C CNN
+	1    8925 2975
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5C0BEEFE
+P 9475 4025
+F 0 "R?" V 9268 4025 50  0000 C CNN
+F 1 "R" V 9359 4025 50  0000 C CNN
+F 2 "" V 9405 4025 50  0001 C CNN
+F 3 "~" H 9475 4025 50  0001 C CNN
+	1    9475 4025
+	0    1    1    0   
+$EndComp
+NoConn ~ 7875 3525
+Connection ~ 9625 4025
+Wire Wire Line
+	9625 4025 9625 3325
+Wire Wire Line
+	9325 4025 9175 4025
+Wire Wire Line
+	8375 3425 8625 3425
+Wire Wire Line
+	8625 3425 8625 3125
+Connection ~ 8625 3425
+Wire Wire Line
+	8625 3425 8700 3425
+Wire Wire Line
+	8925 3225 8925 3125
+Connection ~ 8925 3225
+Wire Wire Line
+	8925 3225 8375 3225
+Wire Wire Line
+	9675 5300 10425 5300
+Wire Wire Line
+	8925 2825 8625 2825
+Wire Wire Line
+	7875 2825 7875 3225
+Connection ~ 8625 2825
+Wire Wire Line
+	8625 2825 7875 2825
+Text GLabel 7750 2825 0    50   Input ~ 0
+3V3_Ref
+Wire Wire Line
+	7875 2825 7750 2825
+Connection ~ 7875 2825
+$Comp
+L power:GND #PWR?
+U 1 1 5C0CC5A8
+P 7700 3700
+F 0 "#PWR?" H 7700 3450 50  0001 C CNN
+F 1 "GND" H 7705 3527 50  0000 C CNN
+F 2 "" H 7700 3700 50  0001 C CNN
+F 3 "" H 7700 3700 50  0001 C CNN
+	1    7700 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7875 3625 7700 3625
+Wire Wire Line
+	7700 3625 7700 3700
+Wire Wire Line
+	7875 3325 7700 3325
+Wire Wire Line
+	7700 3325 7700 3425
+Connection ~ 7700 3625
+Wire Wire Line
+	7875 3425 7700 3425
+Connection ~ 7700 3425
+Wire Wire Line
+	7700 3425 7700 3625
 $EndSCHEMATC
