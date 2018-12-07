@@ -666,15 +666,15 @@ P0.04
 Text GLabel 4150 3950 0    50   BiDi ~ 0
 P0.05
 Text GLabel 4150 4050 0    50   BiDi ~ 0
-P0.06
+P0.06_CS1
 Text GLabel 4150 4150 0    50   BiDi ~ 0
-P0.07
+P0.07_RES
 Text GLabel 4150 4250 0    50   BiDi ~ 0
-P0.08
+P0.08_A0
 Text GLabel 4150 4350 0    50   BiDi ~ 0
-P0.09
+P0.09_SCL
 Text GLabel 4150 4450 0    50   BiDi ~ 0
-P0.10
+P0.10_SI
 Text GLabel 6350 4050 2    50   BiDi ~ 0
 P0.24
 Text GLabel 6350 4150 2    50   BiDi ~ 0

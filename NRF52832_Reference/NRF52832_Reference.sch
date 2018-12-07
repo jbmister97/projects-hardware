@@ -866,6 +866,79 @@ Wire Wire Line
 	1300 3675 1250 3675
 Wire Wire Line
 	1250 3675 1250 3725
-Text GLabel 4250 2925 2    50   Input ~ 0
+Text GLabel 4625 3000 2    50   Input ~ 0
 3V3_Ref
+$Comp
+L Device:R R?
+U 1 1 5C0CAB0C
+P 3650 3150
+F 0 "R?" H 3720 3196 50  0000 L CNN
+F 1 "R" H 3720 3105 50  0000 L CNN
+F 2 "" V 3580 3150 50  0001 C CNN
+F 3 "~" H 3650 3150 50  0001 C CNN
+	1    3650 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5C0CAB88
+P 3950 3150
+F 0 "R?" H 4020 3196 50  0000 L CNN
+F 1 "R" H 4020 3105 50  0000 L CNN
+F 2 "" V 3880 3150 50  0001 C CNN
+F 3 "~" H 3950 3150 50  0001 C CNN
+	1    3950 3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3100 3775 4725 3775
+Wire Wire Line
+	3100 3675 3650 3675
+Text GLabel 4725 3775 2    50   Input ~ 0
+P0.06_CS1
+Text GLabel 4725 3675 2    50   Input ~ 0
+P0.07_RES
+Text GLabel 4750 3575 2    50   Input ~ 0
+P0.08_A0
+Text GLabel 4750 3475 2    50   Input ~ 0
+P0.09_SCL
+Text GLabel 4750 3375 2    50   Input ~ 0
+P0.10_SI
+Wire Wire Line
+	3100 3575 4750 3575
+Wire Wire Line
+	4750 3475 3100 3475
+Wire Wire Line
+	3100 3375 4750 3375
+Wire Wire Line
+	3650 3675 3650 3300
+Connection ~ 3650 3675
+Wire Wire Line
+	3650 3675 3950 3675
+Wire Wire Line
+	3950 3675 3950 3300
+Connection ~ 3950 3675
+Wire Wire Line
+	3950 3675 4725 3675
+Wire Wire Line
+	3100 3275 3100 3000
+Wire Wire Line
+	3100 3000 3650 3000
+Connection ~ 3650 3000
+Wire Wire Line
+	3650 3000 3950 3000
+Connection ~ 3950 3000
+Wire Wire Line
+	3950 3000 4100 3000
+$Comp
+L Switch:SW_SPST SW?
+U 1 1 5C0FC1D4
+P 4300 3000
+F 0 "SW?" H 4300 3235 50  0000 C CNN
+F 1 "SW_SPST" H 4300 3144 50  0000 C CNN
+F 2 "" H 4300 3000 50  0001 C CNN
+F 3 "" H 4300 3000 50  0001 C CNN
+	1    4300 3000
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
