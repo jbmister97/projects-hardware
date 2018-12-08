@@ -1327,4 +1327,8 @@ Wire Wire Line
 Connection ~ 9750 3775
 Wire Wire Line
 	9750 3775 9750 3500
+Text Label 9850 3675 0    50   ~ 0
+SWDCLK
+Text Label 9850 3775 0    50   ~ 0
+SWDIO
 $EndSCHEMATC
