@@ -330,8 +330,6 @@ Wire Wire Line
 	4000 2600 4000 3100
 NoConn ~ 4050 2700
 NoConn ~ 4700 2700
-Wire Wire Line
-	5500 2150 5300 2150
 Connection ~ 5300 2150
 $Comp
 L Device:C C?
@@ -579,7 +577,7 @@ L Device:R R?
 U 1 1 5C0C9CDB
 P 4800 5400
 F 0 "R?" H 4650 5500 50  0000 L CNN
-F 1 "330" H 4600 5375 50  0000 L CNN
+F 1 "220" H 4600 5375 50  0000 L CNN
 F 2 "" V 4730 5400 50  0001 C CNN
 F 3 "~" H 4800 5400 50  0001 C CNN
 	1    4800 5400
@@ -618,8 +616,6 @@ Wire Wire Line
 	1500 6925 1075 6925
 Wire Wire Line
 	2225 6925 2325 6925
-Wire Wire Line
-	2325 6925 2775 6925
 Connection ~ 2325 6925
 Wire Notes Line
 	7300 500  7300 6525
@@ -716,19 +712,6 @@ Wire Wire Line
 Connection ~ 3150 5950
 Wire Wire Line
 	3150 5950 3150 6000
-$Comp
-L Switch:SW_SPST SW?
-U 1 1 5C0B17BE
-P 5700 2150
-F 0 "SW?" H 5700 2385 50  0000 C CNN
-F 1 "SW_SPST" H 5700 2294 50  0000 C CNN
-F 2 "" H 5700 2150 50  0001 C CNN
-F 3 "" H 5700 2150 50  0001 C CNN
-	1    5700 2150
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5900 2150 6200 2150
 Wire Wire Line
 	1075 6500 1075 6925
 Wire Wire Line
@@ -806,11 +789,36 @@ Wire Wire Line
 Connection ~ 4475 6900
 Wire Wire Line
 	4475 6900 5150 6900
+Text HLabel 5150 6900 2    50   Output ~ 0
+3V
+$Comp
+L Project_Libary:SLIDE_SW_DPDT U?
+U 1 1 5C1C929E
+P 5700 1900
+F 0 "U?" H 5852 1946 50  0000 L CNN
+F 1 "SLIDE_SW_DPDT" H 5852 1855 50  0000 L CNN
+F 2 "" H 5700 2150 50  0001 C CNN
+F 3 "" H 5700 2150 50  0001 C CNN
+	1    5700 1900
+	1    0    0    -1  
+$EndComp
 Wire Wire Line
-	1075 6500 3325 6500
+	5600 2150 5600 2075
+Wire Wire Line
+	5300 2150 5600 2150
+Wire Wire Line
+	5700 2150 5700 2075
+Wire Wire Line
+	5700 2150 6200 2150
+NoConn ~ 5800 2075
+NoConn ~ 5800 1725
+NoConn ~ 5700 1725
+NoConn ~ 5600 1725
+Wire Wire Line
+	2325 6925 2775 6925
 Connection ~ 3325 6500
 Wire Wire Line
 	3325 6500 4975 6500
-Text HLabel 5150 6900 2    50   Input ~ 0
-3V
+Wire Wire Line
+	1075 6500 3325 6500
 $EndSCHEMATC

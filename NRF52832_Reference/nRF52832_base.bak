@@ -337,7 +337,7 @@ L Device:C C?
 U 1 1 5BF159D5
 P 2250 3125
 F 0 "C?" V 2100 3100 50  0000 L CNN
-F 1 "12pF" V 2400 3025 50  0000 L CNN
+F 1 "14pF" V 2400 3025 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0402" H 2288 2975 50  0001 C CNN
 F 3 "" H 2250 3125 50  0001 C CNN
 	1    2250 3125
@@ -348,7 +348,7 @@ L Device:C C?
 U 1 1 5BF159DC
 P 2250 2300
 F 0 "C?" V 2075 2275 50  0000 L CNN
-F 1 "12pF" V 2400 2200 50  0000 L CNN
+F 1 "14pF" V 2400 2200 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0402" H 2288 2150 50  0001 C CNN
 F 3 "" H 2250 2300 50  0001 C CNN
 	1    2250 2300
@@ -696,7 +696,7 @@ P0.16
 Text GLabel 5400 5000 3    50   BiDi ~ 0
 P0.17
 Text GLabel 5500 5000 3    50   BiDi ~ 0
-SWO
+P0.18_SWO
 Text GLabel 5600 5000 3    50   BiDi ~ 0
 P0.19
 Text GLabel 5700 5000 3    50   BiDi ~ 0
@@ -715,4 +715,19 @@ Text HLabel 6350 4350 2    50   BiDi ~ 0
 SWDIO
 Text HLabel 6350 4450 2    50   Input ~ 0
 SWDCLK
+Text GLabel 5800 2800 1    50   BiDi ~ 0
+P0.25
+Text GLabel 5700 2800 1    50   BiDi ~ 0
+P0.26
+Text GLabel 5600 2800 1    50   BiDi ~ 0
+P0.27
+Text GLabel 5500 2800 1    50   BiDi ~ 0
+P0.28
+Text GLabel 5400 2800 1    50   BiDi ~ 0
+P0.29
+Text GLabel 5300 2800 1    50   BiDi ~ 0
+P0.30
+Text GLabel 5200 2800 1    50   BiDi ~ 0
+P0.31
+NoConn ~ 5100 2800
 $EndSCHEMATC
