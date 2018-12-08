@@ -546,7 +546,7 @@ F 3 "~" H 9475 4300 50  0001 C CNN
 $EndComp
 NoConn ~ 7875 3800
 Wire Wire Line
-	9625 4300 9625 3600
+	9625 4300 9625 3675
 Wire Wire Line
 	9325 4300 9175 4300
 Wire Wire Line
@@ -1299,11 +1299,36 @@ Wire Wire Line
 	9625 4975 9625 4300
 Connection ~ 9625 4300
 Wire Wire Line
-	9750 5100 9750 3500
+	9750 5100 9750 3775
 Wire Notes Line
 	475  2575 11225 2575
 Wire Notes Line
 	2875 2575 2875 475 
 Text Notes 3900 650  0    50   ~ 0
 GPIO and Button/LEDs
+$Comp
+L Connector:Conn_01x02_Male J?
+U 1 1 5C377AB0
+P 10475 3775
+F 0 "J?" H 10447 3701 50  0000 R CNN
+F 1 "Conn_01x02_Male" H 10448 3746 50  0001 R CNN
+F 2 "" H 10475 3775 50  0001 C CNN
+F 3 "~" H 10475 3775 50  0001 C CNN
+	1    10475 3775
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	10275 3675 9625 3675
+Connection ~ 9625 3675
+Wire Wire Line
+	9625 3675 9625 3600
+Wire Wire Line
+	10275 3775 9750 3775
+Connection ~ 9750 3775
+Wire Wire Line
+	9750 3775 9750 3500
+Text Label 9850 3675 0    50   ~ 0
+SWDCLK
+Text Label 9850 3775 0    50   ~ 0
+SWDIO
 $EndSCHEMATC
