@@ -29,7 +29,7 @@ U 1 1 5BF19ECD
 P 3625 1475
 F 0 "J?" H 3731 2053 50  0000 C CNN
 F 1 "Conn_01x10_Male" H 3731 1962 50  0001 C CNN
-F 2 "" H 3625 1475 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x10_P2.54mm_Vertical" H 3625 1475 50  0001 C CNN
 F 3 "~" H 3625 1475 50  0001 C CNN
 	1    3625 1475
 	1    0    0    -1  
@@ -40,7 +40,7 @@ U 1 1 5BF19F05
 P 6050 1450
 F 0 "J?" H 6156 2028 50  0000 C CNN
 F 1 "Conn_01x10_Male" H 6156 1937 50  0001 C CNN
-F 2 "" H 6050 1450 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x10_P2.54mm_Vertical" H 6050 1450 50  0001 C CNN
 F 3 "~" H 6050 1450 50  0001 C CNN
 	1    6050 1450
 	1    0    0    -1  
@@ -441,22 +441,11 @@ L Device:R R?
 U 1 1 5C0A68CE
 P 8500 3250
 F 0 "R?" H 8570 3296 50  0000 L CNN
-F 1 "10k" H 8570 3205 50  0000 L CNN
+F 1 "47k" H 8570 3205 50  0000 L CNN
 F 2 "" V 8430 3250 50  0001 C CNN
 F 3 "~" H 8500 3250 50  0001 C CNN
 	1    8500 3250
 	1    0    0    -1  
-$EndComp
-$Comp
-L Switch:SW_SPST SW?
-U 1 1 5C0A6C29
-P 8975 4100
-F 0 "SW?" V 8875 3900 50  0000 L CNN
-F 1 "SW_SPST" V 9020 4198 50  0001 L CNN
-F 2 "" H 8975 4100 50  0001 C CNN
-F 3 "" H 8975 4100 50  0001 C CNN
-	1    8975 4100
-	0    1    1    0   
 $EndComp
 $Comp
 L Device:C C?
@@ -480,14 +469,9 @@ F 3 "" H 9175 4525 50  0001 C CNN
 	1    9175 4525
 	1    0    0    -1  
 $EndComp
-Connection ~ 8975 3900
-Wire Wire Line
-	8975 3900 9175 3900
 Connection ~ 9175 3900
 Wire Wire Line
 	9175 3900 9275 3900
-Wire Wire Line
-	8975 4400 9175 4400
 Wire Wire Line
 	9175 4400 9175 4525
 Connection ~ 9175 4400
@@ -873,8 +857,6 @@ Wire Wire Line
 	8500 3400 8500 3900
 Connection ~ 8500 3100
 Connection ~ 8500 3900
-Wire Wire Line
-	8500 3900 8975 3900
 Connection ~ 8800 3100
 Wire Wire Line
 	8800 3100 9075 3100
@@ -1010,52 +992,28 @@ Wire Wire Line
 	5650 3950 5275 3950
 Wire Wire Line
 	5650 4225 5275 4225
-Text GLabel 3825 1075 2    50   Input ~ 0
-5V_Ref
 Text GLabel 3825 1175 2    50   Input ~ 0
+5V_Ref
+Text GLabel 3825 1275 2    50   Input ~ 0
 3V3_Ref
-$Comp
-L power:GND #PWR?
-U 1 1 5C235D31
-P 3950 1975
-F 0 "#PWR?" H 3950 1725 50  0001 C CNN
-F 1 "GND" H 3955 1802 50  0000 C CNN
-F 2 "" H 3950 1975 50  0001 C CNN
-F 3 "" H 3950 1975 50  0001 C CNN
-	1    3950 1975
-	1    0    0    -1  
-$EndComp
-Text GLabel 3825 1275 2    50   BiDi ~ 0
-P0.25
 Text GLabel 3825 1375 2    50   BiDi ~ 0
-P0.26
+P0.25
 Text GLabel 3825 1475 2    50   BiDi ~ 0
-P0.27
+P0.26
 Text GLabel 3825 1575 2    50   BiDi ~ 0
-P0.28
+P0.27
 Text GLabel 3825 1675 2    50   BiDi ~ 0
-P0.29
+P0.28
 Text GLabel 3825 1775 2    50   BiDi ~ 0
-P0.30
+P0.29
 Text GLabel 3825 1875 2    50   BiDi ~ 0
+P0.30
+Text GLabel 3825 1975 2    50   BiDi ~ 0
 P0.31
-Wire Wire Line
-	3950 1975 3825 1975
 Text Notes 1200 2725 0    50   ~ 0
 LCD Display using SPI interface. Has jumpers that can be removed to free I/O
 Wire Notes Line
 	6950 2575 6950 7775
-$Comp
-L Connector:Conn_01x09_Male J?
-U 1 1 5C25D3E9
-P 4775 1450
-F 0 "J?" H 4881 1937 50  0000 C CNN
-F 1 "Conn_01x09_Male" H 4881 1937 50  0001 C CNN
-F 2 "" H 4775 1450 50  0001 C CNN
-F 3 "~" H 4775 1450 50  0001 C CNN
-	1    4775 1450
-	1    0    0    -1  
-$EndComp
 Text GLabel 4975 1050 2    50   BiDi ~ 0
 P0.02
 Text GLabel 4975 1150 2    50   BiDi ~ 0
@@ -1095,36 +1053,14 @@ P0.19
 Text GLabel 6250 1950 2    50   BiDi ~ 0
 P0.20
 $Comp
-L Connector:Conn_01x03_Male J?
-U 1 1 5C282C46
-P 7550 1175
-F 0 "J?" H 7656 1362 50  0000 C CNN
-F 1 "Conn_01x03_Male" H 7656 1362 50  0001 C CNN
-F 2 "" H 7550 1175 50  0001 C CNN
-F 3 "~" H 7550 1175 50  0001 C CNN
-	1    7550 1175
-	1    0    0    -1  
-$EndComp
-$Comp
-L Switch:SW_SPST SW?
-U 1 1 5C28371C
-P 8075 1475
-F 0 "SW?" V 8075 1573 50  0000 L CNN
-F 1 "SW_SPST" V 8120 1573 50  0001 L CNN
-F 2 "" H 8075 1475 50  0001 C CNN
-F 3 "" H 8075 1475 50  0001 C CNN
-	1    8075 1475
-	0    1    1    0   
-$EndComp
-$Comp
 L Device:R R?
 U 1 1 5C2838F9
-P 8075 825
-F 0 "R?" H 8145 871 50  0000 L CNN
-F 1 "R" H 8145 780 50  0000 L CNN
-F 2 "" V 8005 825 50  0001 C CNN
-F 3 "~" H 8075 825 50  0001 C CNN
-	1    8075 825 
+P 8025 825
+F 0 "R?" H 8095 871 50  0000 L CNN
+F 1 "47k" H 8095 780 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 7955 825 50  0001 C CNN
+F 3 "~" H 8025 825 50  0001 C CNN
+	1    8025 825 
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1133,7 +1069,7 @@ U 1 1 5C283A70
 P 8425 1425
 F 0 "C?" H 8540 1471 50  0000 L CNN
 F 1 "0.1uF" H 8540 1380 50  0000 L CNN
-F 2 "" H 8463 1275 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 8463 1275 50  0001 C CNN
 F 3 "~" H 8425 1425 50  0001 C CNN
 	1    8425 1425
 	1    0    0    -1  
@@ -1144,7 +1080,7 @@ U 1 1 5C284626
 P 8900 1675
 F 0 "R?" H 8970 1721 50  0000 L CNN
 F 1 "100" H 8970 1630 50  0000 L CNN
-F 2 "" V 8830 1675 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 8830 1675 50  0001 C CNN
 F 3 "~" H 8900 1675 50  0001 C CNN
 	1    8900 1675
 	1    0    0    -1  
@@ -1155,7 +1091,7 @@ U 1 1 5C2846C2
 P 9600 1675
 F 0 "R?" H 9670 1721 50  0000 L CNN
 F 1 "100" H 9670 1630 50  0000 L CNN
-F 2 "" V 9530 1675 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 9530 1675 50  0001 C CNN
 F 3 "~" H 9600 1675 50  0001 C CNN
 	1    9600 1675
 	1    0    0    -1  
@@ -1166,7 +1102,7 @@ U 1 1 5C2847C2
 P 8900 1975
 F 0 "D?" V 8938 1858 50  0000 R CNN
 F 1 "LED" V 8847 1858 50  0000 R CNN
-F 2 "" H 8900 1975 50  0001 C CNN
+F 2 "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 8900 1975 50  0001 C CNN
 F 3 "~" H 8900 1975 50  0001 C CNN
 	1    8900 1975
 	0    -1   -1   0   
@@ -1177,7 +1113,7 @@ U 1 1 5C28496C
 P 9600 1975
 F 0 "D?" V 9638 1858 50  0000 R CNN
 F 1 "LED" V 9547 1858 50  0000 R CNN
-F 2 "" H 9600 1975 50  0001 C CNN
+F 2 "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 9600 1975 50  0001 C CNN
 F 3 "~" H 9600 1975 50  0001 C CNN
 	1    9600 1975
 	0    -1   -1   0   
@@ -1188,7 +1124,7 @@ U 1 1 5C284A46
 P 9100 1525
 F 0 "J?" H 9072 1451 50  0000 R CNN
 F 1 "Conn_01x02_Male" H 9206 1612 50  0001 C CNN
-F 2 "" H 9100 1525 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 9100 1525 50  0001 C CNN
 F 3 "~" H 9100 1525 50  0001 C CNN
 	1    9100 1525
 	-1   0    0    1   
@@ -1199,7 +1135,7 @@ U 1 1 5C284AEA
 P 9800 1525
 F 0 "J?" H 9772 1451 50  0000 R CNN
 F 1 "Conn_01x02_Male" H 9906 1612 50  0001 C CNN
-F 2 "" H 9800 1525 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 9800 1525 50  0001 C CNN
 F 3 "~" H 9800 1525 50  0001 C CNN
 	1    9800 1525
 	-1   0    0    1   
@@ -1218,12 +1154,7 @@ Wire Wire Line
 	10050 1175 8900 1175
 Wire Wire Line
 	10050 1275 8425 1275
-Connection ~ 8075 1275
-Wire Wire Line
-	8075 1275 7750 1275
 Connection ~ 8425 1275
-Wire Wire Line
-	8425 1275 8075 1275
 Wire Wire Line
 	8900 1425 8900 1175
 Connection ~ 8900 1175
@@ -1235,18 +1166,16 @@ Connection ~ 9600 1075
 Wire Wire Line
 	9600 1075 7750 1075
 Wire Wire Line
-	8075 1275 8075 975 
-Wire Wire Line
-	8075 675  7850 675 
+	8025 1275 8025 975 
 $Comp
 L power:GND #PWR?
 U 1 1 5C307A22
-P 8075 1800
-F 0 "#PWR?" H 8075 1550 50  0001 C CNN
-F 1 "GND" H 8080 1627 50  0000 C CNN
-F 2 "" H 8075 1800 50  0001 C CNN
-F 3 "" H 8075 1800 50  0001 C CNN
-	1    8075 1800
+P 8075 1875
+F 0 "#PWR?" H 8075 1625 50  0001 C CNN
+F 1 "GND" H 8080 1702 50  0000 C CNN
+F 2 "" H 8075 1875 50  0001 C CNN
+F 3 "" H 8075 1875 50  0001 C CNN
+	1    8075 1875
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1271,15 +1200,6 @@ F 3 "" H 9600 2200 50  0001 C CNN
 	1    9600 2200
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	8075 1675 8075 1750
-Wire Wire Line
-	8425 1575 8425 1750
-Wire Wire Line
-	8425 1750 8075 1750
-Connection ~ 8075 1750
-Wire Wire Line
-	8075 1750 8075 1800
 Wire Wire Line
 	8900 2125 8900 2200
 Wire Wire Line
@@ -1332,7 +1252,113 @@ Connection ~ 9625 4400
 Wire Wire Line
 	9625 3675 9625 4400
 Wire Wire Line
-	8975 4400 8975 4300
-Wire Wire Line
 	9175 4200 9175 4400
+Text GLabel 3825 1075 2    50   Input ~ 0
+V+
+$Comp
+L Connector:Conn_01x04_Male J?
+U 1 1 5C11D05F
+P 7550 1175
+F 0 "J?" H 7656 1362 50  0000 C CNN
+F 1 "Conn_01x04_Male" H 7656 1362 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 7550 1175 50  0001 C CNN
+F 3 "~" H 7550 1175 50  0001 C CNN
+	1    7550 1175
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x10_Male J?
+U 1 1 5C127DBC
+P 4775 1450
+F 0 "J?" H 4881 2028 50  0000 C CNN
+F 1 "Conn_01x10_Male" H 4881 1937 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x10_P2.54mm_Vertical" H 4775 1450 50  0001 C CNN
+F 3 "~" H 4775 1450 50  0001 C CNN
+	1    4775 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5C127EF2
+P 5100 2000
+F 0 "#PWR?" H 5100 1750 50  0001 C CNN
+F 1 "GND" H 5105 1827 50  0000 C CNN
+F 2 "" H 5100 2000 50  0001 C CNN
+F 3 "" H 5100 2000 50  0001 C CNN
+	1    5100 2000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4975 1950 5100 1950
+Wire Wire Line
+	5100 1950 5100 2000
+Connection ~ 8025 1275
+Wire Wire Line
+	8025 675  7850 675 
+Wire Wire Line
+	8025 1725 8075 1725
+Wire Wire Line
+	8075 1725 8075 1825
+Connection ~ 8075 1725
+Wire Wire Line
+	8425 1825 8075 1825
+Wire Wire Line
+	8425 1575 8425 1825
+Connection ~ 8075 1825
+Wire Wire Line
+	8075 1825 8075 1875
+Wire Wire Line
+	7750 1375 7850 1375
+Wire Wire Line
+	7850 1375 7850 1825
+Wire Wire Line
+	7850 1825 8075 1825
+Wire Wire Line
+	8875 4350 8925 4350
+Wire Wire Line
+	8925 4350 8925 4400
+Wire Wire Line
+	8925 4400 9175 4400
+Connection ~ 8925 4350
+Wire Wire Line
+	8925 4350 8975 4350
+Wire Wire Line
+	8500 3900 8875 3900
+$Comp
+L Project_Libary:SW_SPST_4pin SW?
+U 1 1 5C1A448E
+P 8075 1575
+F 0 "SW?" V 8075 1700 50  0000 L CNN
+F 1 "SW_SPST_4pin" V 8045 1713 50  0001 L CNN
+F 2 "Custom_Footprints:SW_Tactile_TE_1825910-6" H 8125 1775 50  0001 C CNN
+F 3 "" H 8125 1775 50  0001 C CNN
+	1    8075 1575
+	0    1    1    0   
+$EndComp
+Connection ~ 8125 1275
+Wire Wire Line
+	8125 1275 8425 1275
+$Comp
+L Project_Libary:SW_SPST_4pin SW?
+U 1 1 5C1A47AD
+P 8925 4200
+F 0 "SW?" V 8850 3900 50  0000 L CNN
+F 1 "SW_SPST_4pin" V 8895 4338 50  0001 L CNN
+F 2 "Custom_Footprints:SW_Tactile_TE_1825910-6" H 8975 4400 50  0001 C CNN
+F 3 "" H 8975 4400 50  0001 C CNN
+	1    8925 4200
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8975 3900 9175 3900
+Wire Wire Line
+	8975 3900 8875 3900
+Wire Wire Line
+	7750 1275 8025 1275
+Wire Wire Line
+	8025 1275 8125 1275
+Wire Wire Line
+	8075 1725 8125 1725
+Connection ~ 8975 3900
+Connection ~ 8875 3900
 $EndSCHEMATC
