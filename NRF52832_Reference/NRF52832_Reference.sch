@@ -432,7 +432,7 @@ Wire Wire Line
 	5275 7425 4375 7425
 Wire Notes Line
 	475  5425 6950 5425
-Text GLabel 9000 3700 2    50   BiDi ~ 0
+Text GLabel 9525 3700 2    50   BiDi ~ 0
 P0.18_SWO
 Text GLabel 9275 3900 2    50   BiDi ~ 0
 RESET
@@ -487,12 +487,6 @@ F 3 "~" H 8075 3700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 NoConn ~ 8375 3800
-Wire Wire Line
-	9475 4975 9625 4975
-Wire Wire Line
-	9625 3600 8375 3600
-Wire Wire Line
-	9475 5100 9750 5100
 $Comp
 L Device:R R?
 U 1 1 5C0BEE0E
@@ -518,17 +512,15 @@ $EndComp
 $Comp
 L Device:R R?
 U 1 1 5C0BEEFE
-P 9475 4400
-F 0 "R?" V 9268 4400 50  0000 C CNN
-F 1 "10k" V 9359 4400 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 9405 4400 50  0001 C CNN
-F 3 "~" H 9475 4400 50  0001 C CNN
-	1    9475 4400
+P 9925 4400
+F 0 "R?" V 9718 4400 50  0000 C CNN
+F 1 "10k" V 9809 4400 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 9855 4400 50  0001 C CNN
+F 3 "~" H 9925 4400 50  0001 C CNN
+	1    9925 4400
 	0    1    1    0   
 $EndComp
 NoConn ~ 7875 3800
-Wire Wire Line
-	9325 4400 9175 4400
 Wire Wire Line
 	8800 3700 8800 3400
 Wire Wire Line
@@ -850,9 +842,6 @@ Wire Wire Line
 	8375 3500 9075 3500
 Wire Wire Line
 	7875 3100 8500 3100
-Connection ~ 9075 3500
-Wire Wire Line
-	9075 3500 9750 3500
 Wire Wire Line
 	8500 3400 8500 3900
 Connection ~ 8500 3100
@@ -1204,10 +1193,6 @@ Wire Wire Line
 	8900 2125 8900 2200
 Wire Wire Line
 	9600 2125 9600 2200
-Wire Wire Line
-	9625 4975 9625 4400
-Wire Wire Line
-	9750 5100 9750 3775
 Wire Notes Line
 	475  2575 11225 2575
 Wire Notes Line
@@ -1217,27 +1202,25 @@ GPIO and Button/LEDs
 $Comp
 L Connector:Conn_01x02_Male J?
 U 1 1 5C377AB0
-P 10475 3775
-F 0 "J?" H 10447 3701 50  0000 R CNN
-F 1 "Conn_01x02_Male" H 10448 3746 50  0001 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 10475 3775 50  0001 C CNN
-F 3 "~" H 10475 3775 50  0001 C CNN
-	1    10475 3775
+P 10925 3775
+F 0 "J?" H 10897 3701 50  0000 R CNN
+F 1 "Conn_01x02_Male" H 10898 3746 50  0001 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 10925 3775 50  0001 C CNN
+F 3 "~" H 10925 3775 50  0001 C CNN
+	1    10925 3775
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	10275 3675 9625 3675
-Connection ~ 9625 3675
+	10725 3675 10075 3675
 Wire Wire Line
-	9625 3675 9625 3600
+	10075 3675 10075 3600
 Wire Wire Line
-	10275 3775 9750 3775
-Connection ~ 9750 3775
+	10725 3775 10200 3775
 Wire Wire Line
-	9750 3775 9750 3500
-Text Label 9850 3675 0    50   ~ 0
+	10200 3775 10200 3500
+Text Label 10300 3675 0    50   ~ 0
 SWDCLK
-Text Label 9850 3775 0    50   ~ 0
+Text Label 10300 3775 0    50   ~ 0
 SWDIO
 Connection ~ 4000 3075
 Connection ~ 4000 3750
@@ -1248,9 +1231,6 @@ Wire Wire Line
 	4000 3075 4300 3075
 Wire Wire Line
 	4000 3750 4600 3750
-Connection ~ 9625 4400
-Wire Wire Line
-	9625 3675 9625 4400
 Wire Wire Line
 	9175 4200 9175 4400
 Text GLabel 3825 1075 2    50   Input ~ 0
@@ -1361,4 +1341,63 @@ Wire Wire Line
 	8075 1725 8125 1725
 Connection ~ 8975 3900
 Connection ~ 8875 3900
+$Comp
+L Device:R R?
+U 1 1 5C1BC35E
+P 10075 4025
+F 0 "R?" H 9900 4075 50  0000 L CNN
+F 1 "22" H 9925 3975 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 10005 4025 50  0001 C CNN
+F 3 "~" H 10075 4025 50  0001 C CNN
+	1    10075 4025
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5C1BC400
+P 10200 4025
+F 0 "R?" H 10270 4071 50  0000 L CNN
+F 1 "22" H 10270 3980 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 10130 4025 50  0001 C CNN
+F 3 "~" H 10200 4025 50  0001 C CNN
+	1    10200 4025
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5C1F2B3E
+P 9150 3700
+F 0 "R?" V 9100 3525 50  0000 C CNN
+F 1 "22" V 9100 3875 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 9080 3700 50  0001 C CNN
+F 3 "~" H 9150 3700 50  0001 C CNN
+	1    9150 3700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9300 3700 9525 3700
+Wire Wire Line
+	9075 3500 10200 3500
+Connection ~ 9075 3500
+Wire Wire Line
+	8375 3600 10075 3600
+Wire Wire Line
+	9475 4975 10075 4975
+Wire Wire Line
+	9475 5100 10200 5100
+Wire Wire Line
+	9175 4400 9775 4400
+Wire Wire Line
+	10075 4400 10075 4975
+Wire Wire Line
+	10075 4400 10075 4175
+Connection ~ 10075 4400
+Wire Wire Line
+	10200 4175 10200 5100
+Wire Wire Line
+	10075 3875 10075 3675
+Connection ~ 10075 3675
+Wire Wire Line
+	10200 3875 10200 3775
+Connection ~ 10200 3775
 $EndSCHEMATC
