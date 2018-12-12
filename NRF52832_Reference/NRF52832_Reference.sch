@@ -827,7 +827,7 @@ F 1 "SLIDE_SW_DPDT" H 1352 3055 50  0000 L CNN
 F 2 "Custom_Footprints:SW_DPDT_Slide_JS202011CQN" H 1200 3350 50  0001 C CNN
 F 3 "" H 1200 3350 50  0001 C CNN
 	1    1200 3100
-	1    0    0    -1  
+	-1   0    0    1   
 $EndComp
 NoConn ~ 1300 3275
 NoConn ~ 1300 2925
@@ -943,50 +943,46 @@ Wire Wire Line
 	5650 3950 5275 3950
 Wire Wire Line
 	5650 4225 5275 4225
-Text GLabel 3825 1175 2    50   Input ~ 0
+Text GLabel 3825 1975 2    50   Input ~ 0
 5V_Ref
-Text GLabel 3825 1275 2    50   Input ~ 0
+Text GLabel 3825 1875 2    50   Input ~ 0
 3V3_Ref
-Text GLabel 3825 1375 2    50   BiDi ~ 0
+Text GLabel 3825 1175 2    50   BiDi ~ 0
 P0.25
-Text GLabel 3825 1475 2    50   BiDi ~ 0
+Text GLabel 3825 1275 2    50   BiDi ~ 0
 P0.26
-Text GLabel 3825 1575 2    50   BiDi ~ 0
+Text GLabel 3825 1375 2    50   BiDi ~ 0
 P0.27
-Text GLabel 3825 1675 2    50   BiDi ~ 0
+Text GLabel 3825 1475 2    50   BiDi ~ 0
 P0.28
-Text GLabel 3825 1775 2    50   BiDi ~ 0
+Text GLabel 3825 1575 2    50   BiDi ~ 0
 P0.29
-Text GLabel 3825 1875 2    50   BiDi ~ 0
+Text GLabel 3825 1675 2    50   BiDi ~ 0
 P0.30
-Text GLabel 3825 1975 2    50   BiDi ~ 0
+Text GLabel 3825 1775 2    50   BiDi ~ 0
 P0.31
 Text Notes 1200 2725 0    50   ~ 0
 LCD Display using SPI interface. Has jumpers that can be removed to free I/O
 Wire Notes Line
 	6950 2575 6950 7775
-Text GLabel 4975 1050 2    50   BiDi ~ 0
+Text GLabel 4975 1850 2    50   BiDi ~ 0
 P0.02
-Text GLabel 4975 1150 2    50   BiDi ~ 0
+Text GLabel 4975 1750 2    50   BiDi ~ 0
 P0.03
-Text GLabel 4975 1250 2    50   BiDi ~ 0
+Text GLabel 4975 1650 2    50   BiDi ~ 0
 P0.04
-Text GLabel 4975 1350 2    50   BiDi ~ 0
+Text GLabel 4975 1550 2    50   BiDi ~ 0
 P0.05
 Text GLabel 4975 1450 2    50   BiDi ~ 0
 P0.06_CS1
-Text GLabel 4975 1550 2    50   BiDi ~ 0
+Text GLabel 4975 1350 2    50   BiDi ~ 0
 P0.07_RES
-Text GLabel 4975 1650 2    50   BiDi ~ 0
+Text GLabel 4975 1250 2    50   BiDi ~ 0
 P0.08_A0
-Text GLabel 4975 1750 2    50   BiDi ~ 0
+Text GLabel 4975 1150 2    50   BiDi ~ 0
 P0.09_SCL
-Text GLabel 4975 1850 2    50   BiDi ~ 0
+Text GLabel 4975 1050 2    50   BiDi ~ 0
 P0.10_SI
-Text GLabel 6250 1050 2    50   BiDi ~ 0
-P0.11_SDA
-Text GLabel 6250 1150 2    50   BiDi ~ 0
-P0.12_SCL
 Text GLabel 6250 1250 2    50   BiDi ~ 0
 P0.13
 Text GLabel 6250 1350 2    50   BiDi ~ 0
@@ -1028,68 +1024,55 @@ $EndComp
 $Comp
 L Device:R R8
 U 1 1 5C284626
-P 8900 1675
-F 0 "R8" H 8970 1721 50  0000 L CNN
-F 1 "100" H 8970 1630 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 8830 1675 50  0001 C CNN
-F 3 "~" H 8900 1675 50  0001 C CNN
-	1    8900 1675
+P 9725 1625
+F 0 "R8" H 9795 1671 50  0000 L CNN
+F 1 "100" H 9795 1580 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 9655 1625 50  0001 C CNN
+F 3 "~" H 9725 1625 50  0001 C CNN
+	1    9725 1625
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R R11
 U 1 1 5C2846C2
-P 9600 1675
-F 0 "R11" H 9670 1721 50  0000 L CNN
-F 1 "100" H 9670 1630 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 9530 1675 50  0001 C CNN
-F 3 "~" H 9600 1675 50  0001 C CNN
-	1    9600 1675
+P 10425 1625
+F 0 "R11" H 10495 1671 50  0000 L CNN
+F 1 "100" H 10495 1580 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 10355 1625 50  0001 C CNN
+F 3 "~" H 10425 1625 50  0001 C CNN
+	1    10425 1625
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:LED D1
 U 1 1 5C2847C2
-P 8900 1975
-F 0 "D1" V 8938 1858 50  0000 R CNN
-F 1 "LED" V 8847 1858 50  0000 R CNN
-F 2 "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 8900 1975 50  0001 C CNN
-F 3 "~" H 8900 1975 50  0001 C CNN
-	1    8900 1975
+P 9725 1925
+F 0 "D1" V 9763 1808 50  0000 R CNN
+F 1 "LED" V 9672 1808 50  0000 R CNN
+F 2 "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 9725 1925 50  0001 C CNN
+F 3 "~" H 9725 1925 50  0001 C CNN
+	1    9725 1925
 	0    -1   -1   0   
 $EndComp
 $Comp
 L Device:LED D2
 U 1 1 5C28496C
-P 9600 1975
-F 0 "D2" V 9638 1858 50  0000 R CNN
-F 1 "LED" V 9547 1858 50  0000 R CNN
-F 2 "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 9600 1975 50  0001 C CNN
-F 3 "~" H 9600 1975 50  0001 C CNN
-	1    9600 1975
+P 10425 1925
+F 0 "D2" V 10463 1808 50  0000 R CNN
+F 1 "LED" V 10372 1808 50  0000 R CNN
+F 2 "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 10425 1925 50  0001 C CNN
+F 3 "~" H 10425 1925 50  0001 C CNN
+	1    10425 1925
 	0    -1   -1   0   
 $EndComp
 Text GLabel 7850 675  0    50   Input ~ 0
 3V3_Ref
-Text GLabel 10050 1075 2    50   BiDi ~ 0
+Text GLabel 7750 1075 2    50   BiDi ~ 0
 P0.22
-Text GLabel 10050 1175 2    50   BiDi ~ 0
+Text GLabel 7750 1175 2    50   BiDi ~ 0
 P0.23
-Text GLabel 10050 1275 2    50   BiDi ~ 0
+Text GLabel 8775 1275 2    50   BiDi ~ 0
 P0.24
-Wire Wire Line
-	10050 1075 9600 1075
-Wire Wire Line
-	10050 1175 8900 1175
-Wire Wire Line
-	10050 1275 8425 1275
-Connection ~ 8425 1275
-Connection ~ 8900 1175
-Wire Wire Line
-	8900 1175 7750 1175
-Connection ~ 9600 1075
-Wire Wire Line
-	9600 1075 7750 1075
 Wire Wire Line
 	8025 1275 8025 975 
 $Comp
@@ -1106,29 +1089,29 @@ $EndComp
 $Comp
 L power:GND #PWR0114
 U 1 1 5C307A96
-P 8900 2200
-F 0 "#PWR0114" H 8900 1950 50  0001 C CNN
-F 1 "GND" H 8905 2027 50  0000 C CNN
-F 2 "" H 8900 2200 50  0001 C CNN
-F 3 "" H 8900 2200 50  0001 C CNN
-	1    8900 2200
+P 9725 2150
+F 0 "#PWR0114" H 9725 1900 50  0001 C CNN
+F 1 "GND" H 9730 1977 50  0000 C CNN
+F 2 "" H 9725 2150 50  0001 C CNN
+F 3 "" H 9725 2150 50  0001 C CNN
+	1    9725 2150
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR0115
 U 1 1 5C307B03
-P 9600 2200
-F 0 "#PWR0115" H 9600 1950 50  0001 C CNN
-F 1 "GND" H 9605 2027 50  0000 C CNN
-F 2 "" H 9600 2200 50  0001 C CNN
-F 3 "" H 9600 2200 50  0001 C CNN
-	1    9600 2200
+P 10425 2150
+F 0 "#PWR0115" H 10425 1900 50  0001 C CNN
+F 1 "GND" H 10430 1977 50  0000 C CNN
+F 2 "" H 10425 2150 50  0001 C CNN
+F 3 "" H 10425 2150 50  0001 C CNN
+	1    10425 2150
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8900 2125 8900 2200
+	9725 2075 9725 2150
 Wire Wire Line
-	9600 2125 9600 2200
+	10425 2075 10425 2150
 Wire Notes Line
 	475  2575 11225 2575
 Wire Notes Line
@@ -1257,23 +1240,23 @@ Connection ~ 8875 3900
 $Comp
 L Device:R R14
 U 1 1 5C1BC35E
-P 10075 4025
-F 0 "R14" H 9875 4075 50  0000 L CNN
-F 1 "22" H 9925 3975 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 10005 4025 50  0001 C CNN
-F 3 "~" H 10075 4025 50  0001 C CNN
-	1    10075 4025
+P 10075 4625
+F 0 "R14" H 9875 4675 50  0000 L CNN
+F 1 "22" H 9925 4575 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 10005 4625 50  0001 C CNN
+F 3 "~" H 10075 4625 50  0001 C CNN
+	1    10075 4625
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R R15
 U 1 1 5C1BC400
-P 10200 4025
-F 0 "R15" H 10270 4071 50  0000 L CNN
-F 1 "22" H 10270 3980 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 10130 4025 50  0001 C CNN
-F 3 "~" H 10200 4025 50  0001 C CNN
-	1    10200 4025
+P 10200 4625
+F 0 "R15" H 10270 4671 50  0000 L CNN
+F 1 "22" H 10270 4580 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 10130 4625 50  0001 C CNN
+F 3 "~" H 10200 4625 50  0001 C CNN
+	1    10200 4625
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1301,22 +1284,37 @@ Wire Wire Line
 Wire Wire Line
 	9175 4400 9775 4400
 Wire Wire Line
-	10075 4400 10075 4975
-Wire Wire Line
-	10075 4400 10075 4175
-Connection ~ 10075 4400
-Wire Wire Line
-	10200 4175 10200 5100
-Wire Wire Line
-	10075 3600 10075 3875
-Wire Wire Line
-	10200 3500 10200 3875
-Wire Wire Line
 	5575 7300 6075 7300
 Wire Wire Line
 	5275 7425 6075 7425
+Text GLabel 6250 1150 2    50   BiDi ~ 0
+P0.12_SCL
+Text GLabel 6250 1050 2    50   BiDi ~ 0
+P0.11_SDA
 Wire Wire Line
-	8900 1175 8900 1525
+	10075 4975 10075 4775
 Wire Wire Line
-	9600 1075 9600 1525
+	10200 5100 10200 4775
+Wire Wire Line
+	10075 3600 10075 4400
+Connection ~ 10075 4400
+Wire Wire Line
+	10075 4400 10075 4475
+Wire Wire Line
+	10200 3500 10200 4475
+Wire Wire Line
+	8425 1275 8775 1275
+Connection ~ 8425 1275
+Text GLabel 10550 1275 2    50   BiDi ~ 0
+P0.04
+Text GLabel 9550 1275 0    50   BiDi ~ 0
+P0.05
+Wire Wire Line
+	9725 1475 9725 1275
+Wire Wire Line
+	9725 1275 9550 1275
+Wire Wire Line
+	10425 1475 10425 1275
+Wire Wire Line
+	10425 1275 10550 1275
 $EndSCHEMATC
