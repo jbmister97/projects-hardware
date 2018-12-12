@@ -1135,10 +1135,6 @@ Wire Notes Line
 	2875 2575 2875 475 
 Text Notes 3900 650  0    50   ~ 0
 GPIO and Button/LEDs
-Text Label 9700 3600 0    50   ~ 0
-SWDCLK
-Text Label 9800 3500 0    50   ~ 0
-SWDIO
 Connection ~ 4000 3075
 Connection ~ 4000 3750
 Connection ~ 4300 3850
