@@ -50,13 +50,13 @@ $EndComp
 $Comp
 L Connector:Conn_01x02_Male J18
 U 1 1 5BF32F95
-P 5500 2700
-F 0 "J18" H 5473 2580 50  0000 R CNN
-F 1 "Conn_01x02_Male" H 5473 2671 50  0001 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Horizontal" H 5500 2700 50  0001 C CNN
-F 3 "~" H 5500 2700 50  0001 C CNN
-	1    5500 2700
-	-1   0    0    1   
+P 5500 2600
+F 0 "J18" H 5473 2480 50  0000 R CNN
+F 1 "Conn_01x02_Male" H 5473 2571 50  0001 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Horizontal" H 5500 2600 50  0001 C CNN
+F 3 "~" H 5500 2600 50  0001 C CNN
+	1    5500 2600
+	-1   0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR0131
@@ -258,14 +258,14 @@ Connection ~ 5300 2150
 $Comp
 L Device:C C?
 U 1 1 5BF5917C
-P 1500 7075
+P 1325 7025
 AR Path="/5BF5917C" Ref="C?"  Part="1" 
 AR Path="/5BF31556/5BF5917C" Ref="C30"  Part="1" 
-F 0 "C30" H 1250 7125 50  0000 L CNN
-F 1 "4.7uF" H 1175 7000 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 1538 6925 50  0001 C CNN
-F 3 "~" H 1500 7075 50  0001 C CNN
-	1    1500 7075
+F 0 "C30" H 1075 7075 50  0000 L CNN
+F 1 "1uF" H 1000 6950 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 1363 6875 50  0001 C CNN
+F 3 "~" H 1325 7025 50  0001 C CNN
+	1    1325 7025
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -401,7 +401,7 @@ Wire Wire Line
 Connection ~ 2400 4650
 Wire Wire Line
 	2400 4650 2400 4450
-Text HLabel 2775 6925 2    50   Output ~ 0
+Text HLabel 2775 6875 2    50   Output ~ 0
 3V3
 Text HLabel 5400 5100 2    50   Output ~ 0
 5V
@@ -439,7 +439,7 @@ $Comp
 L Device:R R20
 U 1 1 5C0A072D
 P 3150 5750
-F 0 "R20" H 3000 5800 50  0000 L CNN
+F 0 "R20" H 2925 5800 50  0000 L CNN
 F 1 "220k" H 2900 5700 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 3080 5750 50  0001 C CNN
 F 3 "~" H 3150 5750 50  0001 C CNN
@@ -466,14 +466,14 @@ V+
 $Comp
 L Device:C C?
 U 1 1 5BF59183
-P 2325 7075
+P 2425 7025
 AR Path="/5BF59183" Ref="C?"  Part="1" 
 AR Path="/5BF31556/5BF59183" Ref="C34"  Part="1" 
-F 0 "C34" H 2475 7150 50  0000 L CNN
-F 1 "4.7uF" H 2440 7030 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 2363 6925 50  0001 C CNN
-F 3 "~" H 2325 7075 50  0001 C CNN
-	1    2325 7075
+F 0 "C34" H 2575 7100 50  0000 L CNN
+F 1 "1uF" H 2540 6980 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 2463 6875 50  0001 C CNN
+F 3 "~" H 2425 7025 50  0001 C CNN
+	1    2425 7025
 	1    0    0    -1  
 $EndComp
 Connection ~ 2400 5100
@@ -496,7 +496,7 @@ $Comp
 L Device:R R24
 U 1 1 5C0C9CDB
 P 4800 5400
-F 0 "R24" H 4650 5500 50  0000 L CNN
+F 0 "R24" H 4600 5475 50  0000 L CNN
 F 1 "220" H 4600 5375 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 4730 5400 50  0001 C CNN
 F 3 "~" H 4800 5400 50  0001 C CNN
@@ -509,34 +509,9 @@ Wire Wire Line
 	4800 5750 4800 5550
 Wire Wire Line
 	4800 5250 4800 5100
-$Comp
-L Project_Libary:AP2114HA-3.3TRG1 U8
-U 1 1 5C0D7B49
-P 1925 6975
-F 0 "U8" H 1925 7290 50  0000 C CNN
-F 1 "AP2114HA-3.3TRG1" H 1925 7199 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-223-3_TabPin2" H 1925 7225 50  0001 C CNN
-F 3 "" H 1925 7225 50  0001 C CNN
-	1    1925 6975
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2325 7375 1925 7375
-Wire Wire Line
-	1500 7225 1500 7375
-Wire Wire Line
-	1500 7375 1925 7375
 Connection ~ 1925 7375
 Wire Wire Line
 	1925 7275 1925 7375
-Wire Wire Line
-	1625 6925 1500 6925
-Connection ~ 1500 6925
-Wire Wire Line
-	1500 6925 1075 6925
-Wire Wire Line
-	2225 6925 2325 6925
-Connection ~ 2325 6925
 Wire Notes Line
 	7300 500  7300 6525
 Connection ~ 4975 5100
@@ -633,8 +608,6 @@ Connection ~ 3150 5950
 Wire Wire Line
 	3150 5950 3150 6000
 Wire Wire Line
-	1075 6500 1075 6925
-Wire Wire Line
 	4975 5100 4975 6500
 $Comp
 L Project_Libary:AP2138N-3.0TRG1 U12
@@ -660,8 +633,6 @@ F 3 "~" H 4475 7050 50  0001 C CNN
 	1    4475 7050
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	2325 7375 2325 7225
 $Comp
 L Device:C C38
 U 1 1 5C11E4AB
@@ -723,19 +694,13 @@ F 3 "" H 5700 2150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5600 2150 5600 2075
+	5800 2150 5800 2075
 Wire Wire Line
-	5300 2150 5600 2150
-Wire Wire Line
-	5700 2150 5700 2075
-Wire Wire Line
-	5700 2150 6200 2150
-NoConn ~ 5800 2075
+	5800 2150 6300 2150
+NoConn ~ 5600 2075
 NoConn ~ 5800 1725
 NoConn ~ 5700 1725
 NoConn ~ 5600 1725
-Wire Wire Line
-	2325 6925 2775 6925
 Connection ~ 3325 6500
 Wire Wire Line
 	3325 6500 4975 6500
@@ -863,7 +828,7 @@ $Comp
 L Device:R R16
 U 1 1 5C0E61D3
 P 1100 3000
-F 0 "R16" H 950 3050 50  0000 L CNN
+F 0 "R16" H 900 3050 50  0000 L CNN
 F 1 "10k" H 900 2900 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 1030 3000 50  0001 C CNN
 F 3 "~" H 1100 3000 50  0001 C CNN
@@ -901,8 +866,50 @@ Wire Wire Line
 	825  3150 825  3200
 Wire Wire Line
 	825  3200 1100 3200
-Text GLabel 6200 2150 2    50   Output ~ 0
+Text GLabel 6300 2150 2    50   Output ~ 0
 V+
 Text GLabel 700  4900 0    50   Input ~ 0
 V+
+Wire Wire Line
+	5700 2150 5700 2075
+Wire Wire Line
+	5300 2150 5700 2150
+$Comp
+L Project_Libary:NCV8161BSN330T1G U8
+U 1 1 5C1429EA
+P 1925 6925
+F 0 "U8" H 1925 7240 50  0000 C CNN
+F 1 "NCV8161BSN330T1G" H 1925 7149 50  0000 C CNN
+F 2 "Package_SO:TSOP-5_1.65x3.05mm_P0.95mm" H 1825 7375 50  0001 C CNN
+F 3 "" H 1825 7375 50  0001 C CNN
+	1    1925 6925
+	1    0    0    -1  
+$EndComp
+Connection ~ 2425 6875
+Wire Wire Line
+	2425 6875 2775 6875
+Wire Wire Line
+	1075 6500 1075 6875
+Wire Wire Line
+	1075 6875 1325 6875
+Connection ~ 1325 6875
+Wire Wire Line
+	1325 6875 1550 6875
+Wire Wire Line
+	1325 7175 1325 7375
+Wire Wire Line
+	1325 7375 1925 7375
+Wire Wire Line
+	2425 7375 2425 7175
+Wire Wire Line
+	1925 7375 2425 7375
+Wire Wire Line
+	2225 6875 2425 6875
+Wire Wire Line
+	1625 6975 1550 6975
+Wire Wire Line
+	1550 6975 1550 6875
+Connection ~ 1550 6875
+Wire Wire Line
+	1550 6875 1625 6875
 $EndSCHEMATC
