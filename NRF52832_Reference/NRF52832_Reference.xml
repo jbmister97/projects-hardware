@@ -2,7 +2,7 @@
 <export version="D">
   <design>
     <source>/home/justin/projects-hardware/NRF52832_Reference/NRF52832_Reference.sch</source>
-    <date>Wed 12 Dec 2018 04:22:06 PM PST</date>
+    <date>Thu 13 Dec 2018 12:19:25 PM PST</date>
     <tool>Eeschema 5.0.2-bee76a0~70~ubuntu18.04.1</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
@@ -536,7 +536,7 @@
       <tstamp>5BF159C1</tstamp>
     </comp>
     <comp ref="C27">
-      <value>12nF</value>
+      <value>12pF</value>
       <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <sheetpath names="/Sheet5BF15571/" tstamps="/5BF15572/"/>
