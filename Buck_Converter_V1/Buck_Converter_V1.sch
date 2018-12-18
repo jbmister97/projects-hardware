@@ -1,0 +1,142 @@
+EESchema Schematic File Version 4
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:L L?
+U 1 1 5C184AC8
+P 3350 2075
+F 0 "L?" V 3540 2075 50  0000 C CNN
+F 1 "L" V 3449 2075 50  0000 C CNN
+F 2 "" H 3350 2075 50  0001 C CNN
+F 3 "~" H 3350 2075 50  0001 C CNN
+	1    3350 2075
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5C184B5B
+P 3650 2225
+F 0 "C?" H 3765 2271 50  0000 L CNN
+F 1 "C" H 3765 2180 50  0000 L CNN
+F 2 "" H 3688 2075 50  0001 C CNN
+F 3 "~" H 3650 2225 50  0001 C CNN
+	1    3650 2225
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D?
+U 1 1 5C184C28
+P 2950 2225
+F 0 "D?" V 2904 2304 50  0000 L CNN
+F 1 "D" V 2995 2304 50  0000 L CNN
+F 2 "" H 2950 2225 50  0001 C CNN
+F 3 "~" H 2950 2225 50  0001 C CNN
+	1    2950 2225
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:Q_PMOS_GSD Q?
+U 1 1 5C185695
+P 2525 1975
+F 0 "Q?" V 2775 1975 50  0000 C CNN
+F 1 "Q_PMOS_GSD" V 2866 1975 50  0000 C CNN
+F 2 "" H 2725 2075 50  0001 C CNN
+F 3 "~" H 2525 1975 50  0001 C CNN
+	1    2525 1975
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5C1859E5
+P 2075 1925
+F 0 "R?" H 2145 1971 50  0000 L CNN
+F 1 "R" H 2145 1880 50  0000 L CNN
+F 2 "" V 2005 1925 50  0001 C CNN
+F 3 "~" H 2075 1925 50  0001 C CNN
+	1    2075 1925
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2075 1775 2075 1675
+Wire Wire Line
+	2075 1675 2525 1675
+Wire Wire Line
+	2525 1675 2525 1775
+Wire Wire Line
+	2325 2075 2075 2075
+Connection ~ 2075 2075
+Wire Wire Line
+	2075 2075 1950 2075
+$Comp
+L Device:C C?
+U 1 1 5C185AC1
+P 1950 2225
+F 0 "C?" H 2065 2271 50  0000 L CNN
+F 1 "C" H 2065 2180 50  0000 L CNN
+F 2 "" H 1988 2075 50  0001 C CNN
+F 3 "~" H 1950 2225 50  0001 C CNN
+	1    1950 2225
+	1    0    0    -1  
+$EndComp
+Connection ~ 1950 2075
+Wire Wire Line
+	1950 2075 1675 2075
+Text GLabel 1675 2075 0    50   Input ~ 0
+Vin
+Wire Wire Line
+	2725 2075 2950 2075
+Connection ~ 2950 2075
+Wire Wire Line
+	2950 2075 3200 2075
+Wire Wire Line
+	3500 2075 3650 2075
+Connection ~ 3650 2075
+Wire Wire Line
+	3650 2075 4225 2075
+Wire Wire Line
+	2950 2375 3300 2375
+$Comp
+L power:GND #PWR?
+U 1 1 5C185ECC
+P 3300 2375
+F 0 "#PWR?" H 3300 2125 50  0001 C CNN
+F 1 "GND" H 3305 2202 50  0000 C CNN
+F 2 "" H 3300 2375 50  0001 C CNN
+F 3 "" H 3300 2375 50  0001 C CNN
+	1    3300 2375
+	1    0    0    -1  
+$EndComp
+Connection ~ 3300 2375
+Wire Wire Line
+	3300 2375 3650 2375
+$Comp
+L power:GND #PWR?
+U 1 1 5C185EEC
+P 1950 2375
+F 0 "#PWR?" H 1950 2125 50  0001 C CNN
+F 1 "GND" H 1955 2202 50  0000 C CNN
+F 2 "" H 1950 2375 50  0001 C CNN
+F 3 "" H 1950 2375 50  0001 C CNN
+	1    1950 2375
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2525 1675 2525 1550
+Connection ~ 2525 1675
+Text GLabel 4225 2075 2    50   Output ~ 0
+Vout
+Text GLabel 2525 1550 1    50   Input ~ 0
+P_DRIVE
+$EndSCHEMATC
