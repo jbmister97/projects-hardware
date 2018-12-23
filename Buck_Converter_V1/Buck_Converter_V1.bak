@@ -318,11 +318,9 @@ F 3 "" H 3950 4200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Notes Line
-	500  4775 4500 4775
+	500  4800 4500 4800
 Wire Notes Line
 	500  2500 4500 2500
-Wire Notes Line
-	4500 2500 4500 4600
 Wire Wire Line
 	750  3700 750  3900
 Connection ~ 750  3700
@@ -386,4 +384,8 @@ Text Notes 700  4475 0    50   ~ 0
 RT chosen to be 25k for roughly 300kHZ switching frequency
 Text Notes 700  4600 0    50   ~ 0
 DTC component values chosen for max duty cycle of 90%
+Text Notes 700  4725 0    50   ~ 0
+SCP value chosen for 70ms reaction time
+Wire Notes Line
+	4500 2500 4500 4800
 $EndSCHEMATC
