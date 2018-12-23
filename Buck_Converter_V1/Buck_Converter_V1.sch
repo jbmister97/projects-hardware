@@ -26,7 +26,7 @@ F 3 "~" H 2700 1825 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:C C?
+L Device:CP1 C?
 U 1 1 5C184B5B
 P 3000 1975
 F 0 "C?" H 3115 2021 50  0000 L CNN
@@ -35,17 +35,6 @@ F 2 "" H 3038 1825 50  0001 C CNN
 F 3 "~" H 3000 1975 50  0001 C CNN
 	1    3000 1975
 	1    0    0    -1  
-$EndComp
-$Comp
-L Device:D D?
-U 1 1 5C184C28
-P 2300 1975
-F 0 "D?" V 2254 2054 50  0000 L CNN
-F 1 "D" V 2345 2054 50  0000 L CNN
-F 2 "" H 2300 1975 50  0001 C CNN
-F 3 "~" H 2300 1975 50  0001 C CNN
-	1    2300 1975
-	0    1    1    0   
 $EndComp
 $Comp
 L Device:Q_PMOS_GSD Q?
@@ -63,7 +52,7 @@ L Device:R R?
 U 1 1 5C1859E5
 P 1425 1675
 F 0 "R?" H 1495 1721 50  0000 L CNN
-F 1 "R" H 1495 1630 50  0000 L CNN
+F 1 "3k" H 1495 1630 50  0000 L CNN
 F 2 "" V 1355 1675 50  0001 C CNN
 F 3 "~" H 1425 1675 50  0001 C CNN
 	1    1425 1675
@@ -81,11 +70,11 @@ Connection ~ 1425 1825
 Wire Wire Line
 	1425 1825 1300 1825
 $Comp
-L Device:C C?
+L Device:CP1 C?
 U 1 1 5C185AC1
 P 1300 1975
 F 0 "C?" H 1415 2021 50  0000 L CNN
-F 1 "C" H 1415 1930 50  0000 L CNN
+F 1 "100uF" H 1415 1930 50  0000 L CNN
 F 2 "" H 1338 1825 50  0001 C CNN
 F 3 "~" H 1300 1975 50  0001 C CNN
 	1    1300 1975
@@ -96,11 +85,6 @@ Wire Wire Line
 	1300 1825 1025 1825
 Text GLabel 1025 1825 0    50   Input ~ 0
 Vin
-Wire Wire Line
-	2075 1825 2300 1825
-Connection ~ 2300 1825
-Wire Wire Line
-	2300 1825 2550 1825
 Wire Wire Line
 	2850 1825 3000 1825
 Connection ~ 3000 1825
@@ -162,7 +146,7 @@ L Device:C C?
 U 1 1 5C189AEC
 P 2000 3300
 F 0 "C?" V 1748 3300 50  0000 C CNN
-F 1 "C" V 1839 3300 50  0000 C CNN
+F 1 "0.1uF" V 1839 3300 50  0000 C CNN
 F 2 "" H 2038 3150 50  0001 C CNN
 F 3 "~" H 2000 3300 50  0001 C CNN
 	1    2000 3300
@@ -182,7 +166,7 @@ L Device:C C?
 U 1 1 5C189F25
 P 1550 3450
 F 0 "C?" H 1400 3550 50  0000 L CNN
-F 1 "C" H 1600 3550 50  0000 L CNN
+F 1 "1uF" H 1600 3550 50  0000 L CNN
 F 2 "" H 1588 3300 50  0001 C CNN
 F 3 "~" H 1550 3450 50  0001 C CNN
 	1    1550 3450
@@ -229,46 +213,15 @@ F 3 "~" H 3250 3850 50  0001 C CNN
 $EndComp
 $Comp
 L Device:R R?
-U 1 1 5C18A825
-P 1100 3700
-F 0 "R?" V 1050 3500 50  0000 C CNN
-F 1 "R" V 1050 3900 50  0000 C CNN
-F 2 "" V 1030 3700 50  0001 C CNN
-F 3 "~" H 1100 3700 50  0001 C CNN
-	1    1100 3700
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R R?
 U 1 1 5C18A87B
 P 1100 3900
 F 0 "R?" V 1050 3700 50  0000 C CNN
-F 1 "R" V 1050 4100 50  0000 C CNN
+F 1 "25k" V 1050 4100 50  0000 C CNN
 F 2 "" V 1030 3900 50  0001 C CNN
 F 3 "~" H 1100 3900 50  0001 C CNN
 	1    1100 3900
 	0    1    1    0   
 $EndComp
-$Comp
-L Device:C C?
-U 1 1 5C18AA6D
-P 1100 3550
-F 0 "C?" V 1050 3350 50  0000 L CNN
-F 1 "C" V 1050 3650 50  0000 L CNN
-F 2 "" H 1138 3400 50  0001 C CNN
-F 3 "~" H 1100 3550 50  0001 C CNN
-	1    1100 3550
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	1250 3700 1400 3700
-Wire Wire Line
-	1250 3550 1400 3550
-Wire Wire Line
-	1400 3550 1400 3700
-Wire Wire Line
-	1650 3700 1400 3700
-Connection ~ 1400 3700
 Wire Wire Line
 	1250 3900 1450 3900
 Wire Wire Line
@@ -278,20 +231,8 @@ Wire Wire Line
 Wire Wire Line
 	1550 3300 750  3300
 Wire Wire Line
-	750  3300 750  3550
-Wire Wire Line
 	750  4050 1400 4050
 Connection ~ 1550 3300
-Wire Wire Line
-	950  3550 750  3550
-Connection ~ 750  3550
-Wire Wire Line
-	750  3550 750  3700
-Wire Wire Line
-	950  3700 750  3700
-Connection ~ 750  3700
-Wire Wire Line
-	750  3700 750  3900
 Wire Wire Line
 	950  3900 750  3900
 Connection ~ 750  3900
@@ -382,4 +323,65 @@ Wire Notes Line
 	500  2500 4500 2500
 Wire Notes Line
 	4500 2500 4500 4600
+Wire Wire Line
+	750  3700 750  3900
+Connection ~ 750  3700
+Wire Wire Line
+	950  3700 750  3700
+Wire Wire Line
+	750  3550 750  3700
+Wire Wire Line
+	750  3300 750  3550
+Connection ~ 750  3550
+Wire Wire Line
+	950  3550 750  3550
+Wire Wire Line
+	1250 3550 1400 3550
+Wire Wire Line
+	1400 3550 1400 3700
+Wire Wire Line
+	1650 3700 1400 3700
+Connection ~ 1400 3700
+Wire Wire Line
+	1250 3700 1400 3700
+$Comp
+L Device:R R?
+U 1 1 5C18A825
+P 1100 3700
+F 0 "R?" V 1050 3500 50  0000 C CNN
+F 1 "NC" V 1050 3900 50  0000 C CNN
+F 2 "" V 1030 3700 50  0001 C CNN
+F 3 "~" H 1100 3700 50  0001 C CNN
+	1    1100 3700
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5C18AA6D
+P 1100 3550
+F 0 "C?" V 1050 3350 50  0000 L CNN
+F 1 "NC" V 1050 3650 50  0000 L CNN
+F 2 "" H 1138 3400 50  0001 C CNN
+F 3 "~" H 1100 3550 50  0001 C CNN
+	1    1100 3550
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2075 1825 2300 1825
+$Comp
+L Device:D_Schottky D?
+U 1 1 5C1F0F49
+P 2300 1975
+F 0 "D?" V 2254 2054 50  0000 L CNN
+F 1 "D_Schottky" V 2345 2054 50  0000 L CNN
+F 2 "" H 2300 1975 50  0001 C CNN
+F 3 "~" H 2300 1975 50  0001 C CNN
+	1    2300 1975
+	0    1    1    0   
+$EndComp
+Connection ~ 2300 1825
+Wire Wire Line
+	2300 1825 2550 1825
+Text Notes 700  4475 0    50   ~ 0
+RT chosen to be 25k for roughly 300kHZ switching frequency
 $EndSCHEMATC
