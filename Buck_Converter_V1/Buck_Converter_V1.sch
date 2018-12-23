@@ -318,11 +318,9 @@ F 3 "" H 3950 4200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Notes Line
-	500  4600 4500 4600
+	500  4800 4500 4800
 Wire Notes Line
 	500  2500 4500 2500
-Wire Notes Line
-	4500 2500 4500 4600
 Wire Wire Line
 	750  3700 750  3900
 Connection ~ 750  3700
@@ -349,7 +347,7 @@ L Device:R R?
 U 1 1 5C18A825
 P 1100 3700
 F 0 "R?" V 1050 3500 50  0000 C CNN
-F 1 "NC" V 1050 3900 50  0000 C CNN
+F 1 "56k" V 1050 3900 50  0000 C CNN
 F 2 "" V 1030 3700 50  0001 C CNN
 F 3 "~" H 1100 3700 50  0001 C CNN
 	1    1100 3700
@@ -360,7 +358,7 @@ L Device:C C?
 U 1 1 5C18AA6D
 P 1100 3550
 F 0 "C?" V 1050 3350 50  0000 L CNN
-F 1 "NC" V 1050 3650 50  0000 L CNN
+F 1 "0.1uF" V 1050 3650 50  0000 L CNN
 F 2 "" H 1138 3400 50  0001 C CNN
 F 3 "~" H 1100 3550 50  0001 C CNN
 	1    1100 3550
@@ -384,4 +382,10 @@ Wire Wire Line
 	2300 1825 2550 1825
 Text Notes 700  4475 0    50   ~ 0
 RT chosen to be 25k for roughly 300kHZ switching frequency
+Text Notes 700  4600 0    50   ~ 0
+DTC component values chosen for max duty cycle of 90%
+Text Notes 700  4725 0    50   ~ 0
+SCP value chosen for 70ms reaction time
+Wire Notes Line
+	4500 2500 4500 4800
 $EndSCHEMATC
