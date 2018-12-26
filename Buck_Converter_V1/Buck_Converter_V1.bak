@@ -342,37 +342,28 @@ SCP value chosen for 70ms reaction time
 $Comp
 L Device:R R5
 U 1 1 5C22F567
-P 4250 3700
-F 0 "R5" H 4320 3746 50  0000 L CNN
-F 1 "383" H 4320 3655 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 4180 3700 50  0001 C CNN
-F 3 "~" H 4250 3700 50  0001 C CNN
-	1    4250 3700
+P 4150 3700
+F 0 "R5" H 4220 3746 50  0000 L CNN
+F 1 "383" H 4220 3655 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 4080 3700 50  0001 C CNN
+F 3 "~" H 4150 3700 50  0001 C CNN
+	1    4150 3700
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:C C8
 U 1 1 5C234340
-P 4250 3400
-F 0 "C8" H 4365 3446 50  0000 L CNN
-F 1 "4.7nF" H 4365 3355 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4288 3250 50  0001 C CNN
-F 3 "~" H 4250 3400 50  0001 C CNN
-	1    4250 3400
+P 4150 3400
+F 0 "C8" H 4265 3446 50  0000 L CNN
+F 1 "4.7nF" H 4265 3355 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4188 3250 50  0001 C CNN
+F 3 "~" H 4150 3400 50  0001 C CNN
+	1    4150 3400
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	3950 3625 3950 3850
 Connection ~ 3950 3850
-Wire Wire Line
-	4250 3850 3950 3850
-Wire Wire Line
-	4250 3250 3950 3250
-Wire Wire Line
-	3950 3075 3950 3250
-Connection ~ 3950 3250
-Wire Wire Line
-	3950 3250 3950 3325
 $Comp
 L Device:R_POT_TRIM RV2
 U 1 1 5C238286
@@ -510,4 +501,13 @@ F 3 "~" H 1950 5475 50  0001 C CNN
 	1    1950 5475
 	0    1    1    0   
 $EndComp
+Wire Wire Line
+	3950 3075 3950 3250
+Wire Wire Line
+	4150 3850 3950 3850
+Wire Wire Line
+	4150 3250 3950 3250
+Connection ~ 3950 3250
+Wire Wire Line
+	3950 3250 3950 3325
 $EndSCHEMATC

@@ -599,7 +599,7 @@
   )
 
   (module Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical (layer F.Cu) (tedit 59FED5CC) (tstamp 5C3BE168)
-    (at 113.8 85.8)
+    (at 113.7158 86.0298)
     (descr "Through hole straight pin header, 1x01, 2.54mm pitch, single row")
     (tags "Through hole pin header THT 1x01 2.54mm single row")
     (path /5C23F3CB)
@@ -637,7 +637,7 @@
   )
 
   (module Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical (layer F.Cu) (tedit 59FED5CC) (tstamp 5C3BE17D)
-    (at 113.8 98.5)
+    (at 113.8 98.2853)
     (descr "Through hole straight pin header, 1x01, 2.54mm pitch, single row")
     (tags "Through hole pin header THT 1x01 2.54mm single row")
     (path /5C23F531)
@@ -1208,7 +1208,7 @@
   )
 
   (module Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical (layer F.Cu) (tedit 5C230C99) (tstamp 5C3D9F3F)
-    (at 113.8 80.5688)
+    (at 113.7158 81.3562)
     (descr "Through hole straight pin header, 1x01, 2.54mm pitch, single row")
     (tags "Through hole pin header THT 1x01 2.54mm single row")
     (fp_text reference IN+ (at -3.2258 4.7625 270 unlocked) (layer F.SilkS)
