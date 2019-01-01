@@ -1,0 +1,8 @@
+Reference, Quantity, Value, Footprint, Datasheet
+D1 ,1,"BAS116H,115","Diode_SMD:D_SOD-123F","~"
+F1 ,1,"Fuse","Custom_Footprints:Fuse_Holder_Keystone_4527_Cartridge","~"
+J1 ,1,"TerminalBlock_1x3_5.08mmPitch","Custom_Footprints:TerminalBlock_Molex_1x3_5.04mmPitch","~"
+K1 ,1,"G5Q-1A","Relay_THT:Relay_SPST_Omron-G5Q-1A","https://www.omron.com/ecb/products/pdf/en-g5q.pdf"
+Q1 ,1,"BSS138K","Package_TO_SOT_SMD:SOT-23_Handsoldering","~"
+R1 ,1,"1k","Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder","~"
+R2 ,1,"10k","Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder","~"
