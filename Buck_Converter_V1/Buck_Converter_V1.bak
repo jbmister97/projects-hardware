@@ -373,7 +373,7 @@ F 1 "4125" V 4200 3925 50  0000 C CNN
 F 2 "Potentiometer_THT:Potentiometer_Bourns_3296W_Vertical" H 4100 4125 50  0001 C CNN
 F 3 "~" H 4100 4125 50  0001 C CNN
 	1    4100 4125
-	0    1    1    0   
+	0    -1   1    0   
 $EndComp
 NoConn ~ 4250 4125
 Wire Wire Line

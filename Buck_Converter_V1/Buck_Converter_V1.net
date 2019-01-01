@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source /home/justin/projects-hardware/Buck_Converter_V1/Buck_Converter_V1.sch)
-    (date "Tue 25 Dec 2018 08:31:29 PM PST")
+    (date "Tue 01 Jan 2019 02:26:06 PM PST")
     (tool "Eeschema 5.0.2-bee76a0~70~ubuntu18.04.1")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -31,7 +31,7 @@
       (tstamp 5C184B5B))
     (comp (ref Q1)
       (value SI2319CDS-T1-GE3)
-      (footprint Package_TO_SOT_SMD:SOT-23)
+      (footprint Package_TO_SOT_SMD:SOT-23_Handsoldering)
       (datasheet ~)
       (libsource (lib Device) (part Q_PMOS_GSD) (description "P-MOSFET transistor, gate/source/drain"))
       (sheetpath (names /) (tstamps /))
