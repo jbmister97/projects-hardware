@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source /home/justin/projects-hardware/Outlet_Relay_V1/Outlet_Relay_V1.sch)
-    (date "Tue 01 Jan 2019 02:05:50 AM PST")
+    (date "Tue 01 Jan 2019 02:13:20 AM PST")
     (tool "Eeschema 5.0.2-bee76a0~70~ubuntu18.04.1")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
