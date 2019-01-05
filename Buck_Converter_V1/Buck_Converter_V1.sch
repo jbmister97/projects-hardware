@@ -125,7 +125,7 @@ Vout
 Text GLabel 1875 1300 1    50   Input ~ 0
 P_DRIVE
 $Comp
-L Project_Libary:TL5001CDR U1
+L Buck_Converter_V1-rescue:TL5001CDR-Project_Libary U1
 U 1 1 5C189351
 P 1950 3700
 F 0 "U1" H 2000 3950 50  0000 C CNN
