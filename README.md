@@ -8,7 +8,7 @@ These projects can be downloaded and viewed using their respective EDA tools.
 
 NOTE: Some of these projects may be unfinished and the ones that are in progress may be found in a separate branch and not in master. Switch to that branch to view the project.
 
-Finished
+Finished:
 
 -NRF52 Reference
 
