@@ -21,7 +21,7 @@ F0 "Sheet5C314FAB" 50
 F1 "nrf52832_base.sch" 50
 $EndSheet
 $Sheet
-S 1250 1075 1550 1300
+S 1325 1000 1550 1300
 U 5C31A75C
 F0 "Sheet5C31A75B" 50
 F1 "nrf52_Power.sch" 50

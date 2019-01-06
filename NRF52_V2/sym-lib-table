@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name MM8130-2600RA2)(type Legacy)(uri /home/justin/projects-hardware/NRF52832_Reference/MM8130-2600RA2.lib)(options "")(descr ""))
+  (lib (name NRF52832_Reference-rescue)(type Legacy)(uri /home/justin/projects-hardware/NRF52832_Reference/NRF52832_Reference-rescue.lib)(options "")(descr ""))
+)
