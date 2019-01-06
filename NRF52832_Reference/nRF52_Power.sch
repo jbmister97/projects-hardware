@@ -98,7 +98,7 @@ Wire Wire Line
 Wire Wire Line
 	3550 1300 3550 1400
 $Comp
-L Project_Libary:TP4056E-SN2L1P U9
+L NRF52832_Reference-rescue:TP4056E-SN2L1P-Project_Libary U9
 U 1 1 5BF35E0A
 P 2650 1950
 F 0 "U9" H 2775 2365 50  0000 C CNN
@@ -282,7 +282,7 @@ F 3 "" H 1925 7375 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Project_Libary:TPS613222ADBVR U?
+L NRF52832_Reference-rescue:TPS613222ADBVR-Project_Libary U?
 U 1 1 5BF5919E
 P 1850 5000
 AR Path="/5BF5919E" Ref="U?"  Part="1" 
@@ -610,9 +610,11 @@ Wire Wire Line
 Wire Wire Line
 	4975 5100 4975 6500
 $Comp
-L Project_Libary:AP2138N-3.0TRG1 U12
+L NRF52832_Reference-rescue:AP2138N-3.0TRG1-Project_Libary U12
 U 1 1 5C11B1D5
 P 4025 6900
+AR Path="/5C11B1D5" Ref="U12"  Part="1" 
+AR Path="/5BF31556/5C11B1D5" Ref="U12"  Part="1" 
 F 0 "U12" H 4025 7165 50  0000 C CNN
 F 1 "AP2138N-3.0TRG1" H 4025 7074 50  0000 C CNN
 F 2 "Package_TO_SOT_SMD:SOT-23" H 4025 7150 50  0001 C CNN

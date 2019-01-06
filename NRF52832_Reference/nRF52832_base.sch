@@ -720,9 +720,11 @@ Text GLabel 5200 2800 1    50   BiDi ~ 0
 P0.31
 NoConn ~ 5100 2800
 $Comp
-L Project_Libary:nRF52832 U6
+L NRF52832_Reference-rescue:nRF52832-Project_Libary U6
 U 1 1 5C28BD1C
 P 5000 4450
+AR Path="/5C28BD1C" Ref="U6"  Part="1" 
+AR Path="/5BF15572/5C28BD1C" Ref="U6"  Part="1" 
 F 0 "U6" H 6350 4100 50  0000 L CNN
 F 1 "nRF52832" H 6325 4000 50  0000 L CNN
 F 2 "Package_DFN_QFN:QFN-48-1EP_6x6mm_P0.4mm_EP4.3x4.3mm_ThermalVias" H 5000 4450 50  0001 C CNN

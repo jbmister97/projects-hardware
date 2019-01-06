@@ -129,7 +129,7 @@ F 3 "" H 3000 6650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Project_Libary:TCN75AVUA713 U5
+L NRF52832_Reference-rescue:TCN75AVUA713-Project_Libary U5
 U 1 1 5C09FD2C
 P 4425 6500
 F 0 "U5" H 4425 6965 50  0000 C CNN
@@ -1201,7 +1201,7 @@ Wire Wire Line
 Wire Wire Line
 	8500 3900 8875 3900
 $Comp
-L Project_Libary:SW_SPST_4pin SW1
+L NRF52832_Reference-rescue:SW_SPST_4pin-Project_Libary SW1
 U 1 1 5C1A448E
 P 8075 1575
 F 0 "SW1" V 8075 1700 50  0000 L CNN
@@ -1215,7 +1215,7 @@ Connection ~ 8125 1275
 Wire Wire Line
 	8125 1275 8425 1275
 $Comp
-L Project_Libary:SW_SPST_4pin SW2
+L NRF52832_Reference-rescue:SW_SPST_4pin-Project_Libary SW2
 U 1 1 5C1A47AD
 P 8925 4200
 F 0 "SW2" V 8850 3900 50  0000 L CNN
