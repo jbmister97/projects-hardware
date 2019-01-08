@@ -618,4 +618,202 @@ Text GLabel 9475 5450 0    50   BiDi ~ 0
 P0.24
 Text Notes 7800 1900 0    50   ~ 0
 User I/O
+$Comp
+L Project_Libary:AT34C04-X5M-T U?
+U 1 1 5C344423
+P 1875 6650
+F 0 "U?" H 1875 6965 50  0000 C CNN
+F 1 "AT34C04-X5M-T" H 1875 6874 50  0000 C CNN
+F 2 "" H 1825 7150 50  0001 C CNN
+F 3 "" H 1825 7150 50  0001 C CNN
+	1    1875 6650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Project_Libary:LTR-329ALS-01 U?
+U 1 1 5C344509
+P 3475 6700
+F 0 "U?" H 3475 7065 50  0000 C CNN
+F 1 "LTR-329ALS-01" H 3475 6974 50  0000 C CNN
+F 2 "" H 3475 6800 50  0001 C CNN
+F 3 "" H 3475 6800 50  0001 C CNN
+	1    3475 6700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5C3444A4
+P 1150 6750
+F 0 "C?" H 1265 6796 50  0000 L CNN
+F 1 "0.1uF" H 1265 6705 50  0000 L CNN
+F 2 "" H 1188 6600 50  0001 C CNN
+F 3 "~" H 1150 6750 50  0001 C CNN
+	1    1150 6750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5C34454E
+P 2875 6800
+F 0 "C?" H 2990 6846 50  0000 L CNN
+F 1 "0.1uF" H 2990 6755 50  0000 L CNN
+F 2 "" H 2913 6650 50  0001 C CNN
+F 3 "~" H 2875 6800 50  0001 C CNN
+	1    2875 6800
+	1    0    0    -1  
+$EndComp
+Text Notes 1650 6225 0    50   ~ 0
+EEPROM 4KB
+Text Notes 3250 6225 0    50   ~ 0
+Photo Sensor
+Text GLabel 4900 7525 2    50   BiDi ~ 0
+P0.11_SDA
+Text GLabel 4900 7425 2    50   BiDi ~ 0
+P0.12_SCL
+Text GLabel 1050 6025 0    50   Input ~ 0
+3V3_Ref
+$Comp
+L Device:R R?
+U 1 1 5C344E76
+P 4250 6750
+F 0 "R?" H 4320 6796 50  0000 L CNN
+F 1 "4.7k" H 4320 6705 50  0000 L CNN
+F 2 "" V 4180 6750 50  0001 C CNN
+F 3 "~" H 4250 6750 50  0001 C CNN
+	1    4250 6750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5C344FD3
+P 4575 6750
+F 0 "R?" H 4645 6796 50  0000 L CNN
+F 1 "4.7k" H 4645 6705 50  0000 L CNN
+F 2 "" V 4505 6750 50  0001 C CNN
+F 3 "~" H 4575 6750 50  0001 C CNN
+	1    4575 6750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4575 6025 4575 6600
+Wire Wire Line
+	4250 6600 4250 6025
+Wire Wire Line
+	1050 6025 1150 6025
+Connection ~ 4250 6025
+Wire Wire Line
+	4250 6025 4575 6025
+Wire Wire Line
+	1150 6600 1150 6025
+Connection ~ 1150 6025
+Wire Wire Line
+	1150 6025 2875 6025
+Wire Wire Line
+	1575 6600 1525 6600
+Connection ~ 1150 6600
+Wire Wire Line
+	1575 6700 1525 6700
+Wire Wire Line
+	1525 6700 1525 6600
+Connection ~ 1525 6600
+Wire Wire Line
+	1525 6600 1150 6600
+Wire Wire Line
+	1575 6800 1525 6800
+Wire Wire Line
+	1525 6800 1525 6700
+Connection ~ 1525 6700
+Wire Wire Line
+	3125 6650 2875 6650
+Wire Wire Line
+	2875 6650 2875 6025
+Connection ~ 2875 6650
+Connection ~ 2875 6025
+Wire Wire Line
+	2875 6025 4250 6025
+Wire Wire Line
+	4900 7425 4575 7425
+Wire Wire Line
+	1925 7425 1925 7150
+Wire Wire Line
+	3525 7425 3525 7000
+Connection ~ 3525 7425
+Wire Wire Line
+	3525 7425 1925 7425
+Wire Wire Line
+	4900 7525 4250 7525
+Wire Wire Line
+	1825 7525 1825 7150
+Wire Wire Line
+	3425 7000 3425 7525
+Connection ~ 3425 7525
+Wire Wire Line
+	3425 7525 1825 7525
+Wire Wire Line
+	4250 6900 4250 7525
+Connection ~ 4250 7525
+Wire Wire Line
+	4250 7525 3425 7525
+Wire Wire Line
+	4575 6900 4575 7425
+Connection ~ 4575 7425
+Wire Wire Line
+	4575 7425 3525 7425
+$Comp
+L power:GND #PWR?
+U 1 1 5C357331
+P 1150 6900
+F 0 "#PWR?" H 1150 6650 50  0001 C CNN
+F 1 "GND" H 1155 6727 50  0000 C CNN
+F 2 "" H 1150 6900 50  0001 C CNN
+F 3 "" H 1150 6900 50  0001 C CNN
+	1    1150 6900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5C3573B4
+P 2225 6900
+F 0 "#PWR?" H 2225 6650 50  0001 C CNN
+F 1 "GND" H 2230 6727 50  0000 C CNN
+F 2 "" H 2225 6900 50  0001 C CNN
+F 3 "" H 2225 6900 50  0001 C CNN
+	1    2225 6900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5C3573FB
+P 2875 6950
+F 0 "#PWR?" H 2875 6700 50  0001 C CNN
+F 1 "GND" H 2880 6777 50  0000 C CNN
+F 2 "" H 2875 6950 50  0001 C CNN
+F 3 "" H 2875 6950 50  0001 C CNN
+	1    2875 6950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5C3575E6
+P 3875 6700
+F 0 "#PWR?" H 3875 6450 50  0001 C CNN
+F 1 "GND" H 3880 6527 50  0000 C CNN
+F 2 "" H 3875 6700 50  0001 C CNN
+F 3 "" H 3875 6700 50  0001 C CNN
+	1    3875 6700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2225 6900 2225 6800
+Wire Wire Line
+	2225 6700 2175 6700
+Wire Wire Line
+	2175 6800 2225 6800
+Connection ~ 2225 6800
+Wire Wire Line
+	2225 6800 2225 6700
+Wire Wire Line
+	3875 6700 3875 6650
+Wire Wire Line
+	3875 6650 3825 6650
 $EndSCHEMATC
