@@ -1,0 +1,49 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Project_Libary:TP4056E-SN2L1P U?
+U 1 1 5D6A3841
+P 3300 2675
+F 0 "U?" H 3425 3090 50  0000 C CNN
+F 1 "TP4056E-SN2L1P" H 3425 2999 50  0000 C CNN
+F 2 "" H 3300 2675 50  0001 C CNN
+F 3 "" H 3300 2675 50  0001 C CNN
+	1    3300 2675
+	1    0    0    -1  
+$EndComp
+$Comp
+L Project_Libary:DW01 U?
+U 1 1 5D6A4137
+P 4625 3325
+F 0 "U?" H 4675 3790 50  0000 C CNN
+F 1 "DW01" H 4675 3699 50  0000 C CNN
+F 2 "" H 4625 3325 50  0001 C CNN
+F 3 "" H 4625 3325 50  0001 C CNN
+	1    4625 3325
+	1    0    0    -1  
+$EndComp
+$Comp
+L Project_Libary:FS8205A U?
+U 1 1 5D6A459E
+P 4350 2325
+F 0 "U?" H 4375 2690 50  0000 C CNN
+F 1 "FS8205A" H 4375 2599 50  0000 C CNN
+F 2 "" H 4400 2625 50  0001 C CNN
+F 3 "" H 4400 2625 50  0001 C CNN
+	1    4350 2325
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
