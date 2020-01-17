@@ -1,3 +1,5 @@
+View this project on [CADLAB.io](https://cadlab.io/project/2418). 
+
 # projects-hardware
 
 A collection of personal schematics and PCB design projects done using various EDA tools. Most of the projects are done using KiCad software with the exceptions of the following projects:
