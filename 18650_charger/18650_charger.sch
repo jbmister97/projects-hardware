@@ -123,50 +123,6 @@ F 3 "~" H 5400 4300 50  0001 C CNN
 	1    5400 4300
 	1    0    0    -1  
 $EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 5F2B416F
-P 4600 4550
-F 0 "#PWR?" H 4600 4300 50  0001 C CNN
-F 1 "GND" H 4605 4377 50  0000 C CNN
-F 2 "" H 4600 4550 50  0001 C CNN
-F 3 "" H 4600 4550 50  0001 C CNN
-	1    4600 4550
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 5F2B46B1
-P 6100 5550
-F 0 "#PWR?" H 6100 5300 50  0001 C CNN
-F 1 "GND" H 6105 5377 50  0000 C CNN
-F 2 "" H 6100 5550 50  0001 C CNN
-F 3 "" H 6100 5550 50  0001 C CNN
-	1    6100 5550
-	1    0    0    -1  
-$EndComp
-$Comp
-L Mechanical:MountingHole_Pad H?
-U 1 1 5F264E8A
-P 2800 3150
-F 0 "H?" H 2900 3199 50  0000 L CNN
-F 1 "MountingHole_Pad" H 2900 3108 50  0000 L CNN
-F 2 "" H 2800 3150 50  0001 C CNN
-F 3 "~" H 2800 3150 50  0001 C CNN
-	1    2800 3150
-	1    0    0    -1  
-$EndComp
-$Comp
-L Mechanical:MountingHole_Pad H?
-U 1 1 5F26662E
-P 2450 7050
-F 0 "H?" H 2550 7099 50  0000 L CNN
-F 1 "MountingHole_Pad" H 2550 7008 50  0000 L CNN
-F 2 "" H 2450 7050 50  0001 C CNN
-F 3 "~" H 2450 7050 50  0001 C CNN
-	1    2450 7050
-	1    0    0    -1  
-$EndComp
 Text Notes 800  900  0    50   ~ 0
 Rset is 1k ohm for 540mA charge current.\nRset = 540/Iset
 NoConn ~ 2650 5850
@@ -411,4 +367,90 @@ F 3 "~" H 4250 3750 50  0001 C CNN
 	1    4250 3750
 	0    1    1    0   
 $EndComp
+$Comp
+L Device:R_US R?
+U 1 1 5F3A1849
+P 4000 3550
+F 0 "R?" V 4050 3650 50  0000 L CNN
+F 1 "1k" V 4050 3350 50  0000 L CNN
+F 2 "" V 4040 3540 50  0001 C CNN
+F 3 "~" H 4000 3550 50  0001 C CNN
+	1    4000 3550
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4150 3550 4250 3550
+Wire Wire Line
+	4250 3300 4250 3550
+Connection ~ 4250 3550
+$Comp
+L power:GND1 #PWR?
+U 1 1 5F3D1CA0
+P 4600 4550
+F 0 "#PWR?" H 4600 4300 50  0001 C CNN
+F 1 "GND1" H 4605 4377 50  0000 C CNN
+F 2 "" H 4600 4550 50  0001 C CNN
+F 3 "" H 4600 4550 50  0001 C CNN
+	1    4600 4550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND1 #PWR?
+U 1 1 5F3D255E
+P 6100 5550
+F 0 "#PWR?" H 6100 5300 50  0001 C CNN
+F 1 "GND1" H 6105 5377 50  0000 C CNN
+F 2 "" H 6100 5550 50  0001 C CNN
+F 3 "" H 6100 5550 50  0001 C CNN
+	1    6100 5550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND1 #PWR?
+U 1 1 5F3D2AF9
+P 2050 6950
+F 0 "#PWR?" H 2050 6700 50  0001 C CNN
+F 1 "GND1" H 2055 6777 50  0000 C CNN
+F 2 "" H 2050 6950 50  0001 C CNN
+F 3 "" H 2050 6950 50  0001 C CNN
+	1    2050 6950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R?
+U 1 1 5F3D37C0
+P 1750 6700
+F 0 "R?" H 1818 6746 50  0000 L CNN
+F 1 "0" H 1818 6655 50  0000 L CNN
+F 2 "" V 1790 6690 50  0001 C CNN
+F 3 "~" H 1750 6700 50  0001 C CNN
+	1    1750 6700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5F3D5BC2
+P 1450 6700
+F 0 "C?" H 1565 6746 50  0000 L CNN
+F 1 "NC" H 1565 6655 50  0000 L CNN
+F 2 "" H 1488 6550 50  0001 C CNN
+F 3 "~" H 1450 6700 50  0001 C CNN
+	1    1450 6700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1450 6550 1750 6550
+Wire Wire Line
+	1750 6550 1750 6450
+Connection ~ 1750 6550
+Wire Wire Line
+	1450 6850 1750 6850
+Wire Wire Line
+	1750 6850 2050 6850
+Wire Wire Line
+	2050 6850 2050 6950
+Connection ~ 1750 6850
+Wire Wire Line
+	2050 6450 2050 6850
+Connection ~ 2050 6850
 $EndSCHEMATC
