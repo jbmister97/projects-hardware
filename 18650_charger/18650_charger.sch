@@ -49,12 +49,12 @@ $EndComp
 $Comp
 L Connector:USB_C_Receptacle J?
 U 1 1 5F267AF4
-P 2050 4850
-F 0 "J?" H 2157 6117 50  0000 C CNN
-F 1 "USB_C_Receptacle" H 2157 6026 50  0000 C CNN
-F 2 "" H 2200 4850 50  0001 C CNN
-F 3 "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" H 2200 4850 50  0001 C CNN
-	1    2050 4850
+P 1700 4200
+F 0 "J?" H 1807 5467 50  0000 C CNN
+F 1 "USB_C_Receptacle" H 1807 5376 50  0000 C CNN
+F 2 "" H 1850 4200 50  0001 C CNN
+F 3 "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" H 1850 4200 50  0001 C CNN
+	1    1700 4200
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -125,18 +125,18 @@ F 3 "~" H 5400 4300 50  0001 C CNN
 $EndComp
 Text Notes 800  900  0    50   ~ 0
 Rset is 1k ohm for 540mA charge current.\nRset = 540/Iset
-NoConn ~ 2650 5850
-NoConn ~ 2650 5750
-NoConn ~ 2650 5550
-NoConn ~ 2650 5450
-NoConn ~ 2650 5250
-NoConn ~ 2650 5150
-NoConn ~ 2650 4950
-NoConn ~ 2650 4850
-NoConn ~ 2650 4650
-NoConn ~ 2650 4550
-NoConn ~ 2650 4450
-NoConn ~ 2650 4350
+NoConn ~ 2300 5200
+NoConn ~ 2300 5100
+NoConn ~ 2300 4900
+NoConn ~ 2300 4800
+NoConn ~ 2300 4600
+NoConn ~ 2300 4500
+NoConn ~ 2300 4300
+NoConn ~ 2300 4200
+NoConn ~ 2300 4000
+NoConn ~ 2300 3900
+NoConn ~ 2300 3800
+NoConn ~ 2300 3700
 Text Notes 800  1100 0    50   ~ 0
 Fixed 10k resistor between TS and ground disables temp sense function
 $Comp
@@ -161,8 +161,6 @@ F 3 "~" H 8550 4450 50  0001 C CNN
 	1    8550 4450
 	-1   0    0    -1  
 $EndComp
-Wire Wire Line
-	3750 3850 3950 3850
 Wire Wire Line
 	4600 3950 4300 3950
 Wire Wire Line
@@ -302,30 +300,16 @@ $EndSheet
 $Comp
 L Device:Fuse F?
 U 1 1 5F26A8E6
-P 3400 3850
-F 0 "F?" V 3203 3850 50  0000 C CNN
-F 1 "Fuse" V 3294 3850 50  0000 C CNN
-F 2 "" V 3330 3850 50  0001 C CNN
-F 3 "~" H 3400 3850 50  0001 C CNN
-	1    3400 3850
+P 2650 3200
+F 0 "F?" V 2453 3200 50  0000 C CNN
+F 1 "Fuse" V 2544 3200 50  0000 C CNN
+F 2 "" V 2580 3200 50  0001 C CNN
+F 3 "~" H 2650 3200 50  0001 C CNN
+	1    2650 3200
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	3950 3850 3950 4000
-Wire Wire Line
 	3950 4500 3950 4300
-Wire Wire Line
-	4050 3850 3950 3850
-Connection ~ 3950 3850
-Wire Wire Line
-	4450 3850 4600 3850
-Wire Wire Line
-	3750 3850 3750 3550
-Wire Wire Line
-	3750 3550 3850 3550
-Wire Wire Line
-	3550 3850 3750 3850
-Connection ~ 3750 3850
 $Comp
 L Device:R_US R?
 U 1 1 5F43F0EE
@@ -342,11 +326,6 @@ Wire Wire Line
 Wire Wire Line
 	4250 2600 4250 3000
 Wire Wire Line
-	3750 3550 3750 2450
-Wire Wire Line
-	3750 2450 4700 2450
-Connection ~ 3750 3550
-Wire Wire Line
 	5800 2450 6100 2450
 Wire Wire Line
 	5800 2600 6100 2600
@@ -354,35 +333,28 @@ Text HLabel 6100 2450 2    50   Input ~ 0
 Vbatt+
 Text HLabel 6100 2600 2    50   Input ~ 0
 Vbatt-
-Wire Wire Line
-	3250 3850 2650 3850
 $Comp
 L Device:Q_PMOS_GSD Q?
 U 1 1 5F42065E
-P 4250 3750
-F 0 "Q?" V 4150 3900 50  0000 C CNN
-F 1 "Q_PMOS_GSD" V 4050 4100 50  0000 C CNN
-F 2 "" H 4450 3850 50  0001 C CNN
-F 3 "~" H 4250 3750 50  0001 C CNN
-	1    4250 3750
-	0    1    1    0   
+P 3500 3600
+F 0 "Q?" H 3400 3500 50  0000 C CNN
+F 1 "Q_PMOS_GSD" H 3200 3700 50  0000 C CNN
+F 2 "" H 3700 3700 50  0001 C CNN
+F 3 "~" H 3500 3600 50  0001 C CNN
+	1    3500 3600
+	-1   0    0    1   
 $EndComp
 $Comp
 L Device:R_US R?
 U 1 1 5F3A1849
-P 4000 3550
-F 0 "R?" V 4050 3650 50  0000 L CNN
-F 1 "1k" V 4050 3350 50  0000 L CNN
-F 2 "" V 4040 3540 50  0001 C CNN
-F 3 "~" H 4000 3550 50  0001 C CNN
-	1    4000 3550
-	0    -1   -1   0   
+P 3800 3350
+F 0 "R?" H 3850 3400 50  0000 L CNN
+F 1 "1k" H 3850 3300 50  0000 L CNN
+F 2 "" V 3840 3340 50  0001 C CNN
+F 3 "~" H 3800 3350 50  0001 C CNN
+	1    3800 3350
+	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	4150 3550 4250 3550
-Wire Wire Line
-	4250 3300 4250 3550
-Connection ~ 4250 3550
 $Comp
 L power:GND1 #PWR?
 U 1 1 5F3D1CA0
@@ -408,49 +380,114 @@ $EndComp
 $Comp
 L power:GND1 #PWR?
 U 1 1 5F3D2AF9
-P 2050 6950
-F 0 "#PWR?" H 2050 6700 50  0001 C CNN
-F 1 "GND1" H 2055 6777 50  0000 C CNN
-F 2 "" H 2050 6950 50  0001 C CNN
-F 3 "" H 2050 6950 50  0001 C CNN
-	1    2050 6950
+P 1700 6300
+F 0 "#PWR?" H 1700 6050 50  0001 C CNN
+F 1 "GND1" H 1705 6127 50  0000 C CNN
+F 2 "" H 1700 6300 50  0001 C CNN
+F 3 "" H 1700 6300 50  0001 C CNN
+	1    1700 6300
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R_US R?
 U 1 1 5F3D37C0
-P 1750 6700
-F 0 "R?" H 1818 6746 50  0000 L CNN
-F 1 "0" H 1818 6655 50  0000 L CNN
-F 2 "" V 1790 6690 50  0001 C CNN
-F 3 "~" H 1750 6700 50  0001 C CNN
-	1    1750 6700
+P 1400 6050
+F 0 "R?" H 1468 6096 50  0000 L CNN
+F 1 "0" H 1468 6005 50  0000 L CNN
+F 2 "" V 1440 6040 50  0001 C CNN
+F 3 "~" H 1400 6050 50  0001 C CNN
+	1    1400 6050
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:C C?
 U 1 1 5F3D5BC2
-P 1450 6700
-F 0 "C?" H 1565 6746 50  0000 L CNN
-F 1 "NC" H 1565 6655 50  0000 L CNN
-F 2 "" H 1488 6550 50  0001 C CNN
-F 3 "~" H 1450 6700 50  0001 C CNN
-	1    1450 6700
+P 1100 6050
+F 0 "C?" H 1215 6096 50  0000 L CNN
+F 1 "NC" H 1215 6005 50  0000 L CNN
+F 2 "" H 1138 5900 50  0001 C CNN
+F 3 "~" H 1100 6050 50  0001 C CNN
+	1    1100 6050
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1450 6550 1750 6550
+	1100 5900 1400 5900
 Wire Wire Line
-	1750 6550 1750 6450
-Connection ~ 1750 6550
+	1400 5900 1400 5800
+Connection ~ 1400 5900
 Wire Wire Line
-	1450 6850 1750 6850
+	1100 6200 1400 6200
 Wire Wire Line
-	1750 6850 2050 6850
+	1400 6200 1700 6200
 Wire Wire Line
-	2050 6850 2050 6950
-Connection ~ 1750 6850
+	1700 6200 1700 6300
+Connection ~ 1400 6200
 Wire Wire Line
-	2050 6450 2050 6850
-Connection ~ 2050 6850
+	1700 5800 1700 6200
+Connection ~ 1700 6200
+$Comp
+L Device:R_US R?
+U 1 1 5F418CD0
+P 3050 3600
+F 0 "R?" H 3118 3646 50  0000 L CNN
+F 1 "0" H 3118 3555 50  0000 L CNN
+F 2 "" V 3090 3590 50  0001 C CNN
+F 3 "~" H 3050 3600 50  0001 C CNN
+	1    3050 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3400 3850 3400 3800
+Wire Wire Line
+	3400 3850 3950 3850
+Wire Wire Line
+	3400 3850 3050 3850
+Wire Wire Line
+	3050 3850 3050 3750
+Connection ~ 3400 3850
+Wire Wire Line
+	3400 3400 3400 3200
+Wire Wire Line
+	3400 3200 3050 3200
+Wire Wire Line
+	3050 3450 3050 3200
+Connection ~ 3050 3200
+Wire Wire Line
+	3050 3200 2800 3200
+Wire Wire Line
+	3400 3200 3800 3200
+Connection ~ 3400 3200
+Wire Wire Line
+	3400 2450 4700 2450
+Wire Wire Line
+	3800 3500 3800 3600
+Wire Wire Line
+	3800 3600 3700 3600
+Wire Wire Line
+	4250 3300 4250 3600
+Wire Wire Line
+	4250 3600 3800 3600
+Connection ~ 3800 3600
+Wire Wire Line
+	2300 3200 2500 3200
+Wire Wire Line
+	3950 4000 3950 3850
+Connection ~ 3950 3850
+Wire Wire Line
+	3950 3850 4600 3850
+$Comp
+L Device:R_US R?
+U 1 1 5F439837
+P 3400 2850
+F 0 "R?" H 3468 2896 50  0000 L CNN
+F 1 "0" H 3468 2805 50  0000 L CNN
+F 2 "" V 3440 2840 50  0001 C CNN
+F 3 "~" H 3400 2850 50  0001 C CNN
+	1    3400 2850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3400 3200 3400 3000
+Wire Wire Line
+	3400 2450 3400 2700
 $EndSCHEMATC
